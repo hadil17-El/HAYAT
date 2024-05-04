@@ -1,0 +1,3106 @@
+
+@font-face {
+    font-display: swap;
+    font-family: 'lato-regular';
+    src: url(assets_copiedSite/fonts/Lato-Regular.ttf);
+    font-weight: 400;
+    font-style: normal ;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'lato-semibold';
+    src: url(assets_copiedSite/fonts/Lato-Semibold.ttf);
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'lato-bold';
+    src: url(assets_copiedSite/fonts/Lato-Bold.ttf);
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'lato-black';
+    src: url(assets_copiedSite/fonts/Lato-Black.ttf);
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'lato-light';
+    src: url(assets_copiedSite/fonts/Lato-Light.ttf);
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'lato-italic';
+    src: url(assets_copiedSite/fonts/Lato-Italic.ttf);
+    font-weight: 400;
+    font-style: normal
+}
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "lato-regular", "thesans-plain", sans-serif;
+    overflow-x: hidden
+}
+
+body.page {
+    line-height: 1
+}
+
+:root {
+    --blue_col: #a53d79;
+    --indigo_sections_col: #1d051c;
+}
+
+body {
+    line-height: 1
+}
+body {
+    margin: 0; 
+    padding: 0;
+  }
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1
+}
+
+.clear {
+    clear: both;
+}
+
+.hidden {
+    display: none
+}
+
+.noLink {
+    cursor: default;
+    pointer-events: none
+}
+
+.row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-wrap: wrap; 
+}
+
+*:hover,
+*:focus,
+*:active,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none!important;
+    outline: none
+}
+
+.onlyOnMobile {
+    display: none
+}
+.container {
+    width: 1400px!important;
+    max-width: 1400px!important;
+    margin: 0 auto; 
+    padding: 40px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.paddingTop {
+    padding-top: 75px
+}
+
+.menuOpenerHolder {
+    width: 50px;
+    height: 43px;
+    z-index: 5;
+    text-align: right
+}
+
+.menuOpenerHolder span {
+    background-color: #fff;
+    height: 2.5px;
+    width: 100%;
+    display: block;
+    transition: width 0.3s ease;
+    cursor: pointer;
+}
+
+.menuOpenerHolder span:nth-child(2) {
+    margin: 10px 0 10px 0;
+    height: 2px;
+    width: 50%;
+}
+.menuOpenerHolder:hover span:nth-child(2) {
+    width: 100%
+}
+.menuOpenerHolder span:nth-child(3) {
+    height: 2px;
+    margin: 1px 1px 9px auto;
+}
+
+
+
+
+.blueButton {
+    margin: 0 15px 0 15px;
+    background-color: var(--blue_col);
+    border: 1px solid var(--blue_col);
+    border-radius: 25px;
+    color: #fff;
+    text-align: center;
+    padding: 13px 24px 15px 24px;
+    display: inline-block;
+    font-family: "lato-bold", "thesans-bold", sans-serif;
+    cursor: pointer;
+   
+}
+.blueButton:hover {
+    text-decoration: none;
+    color: var(--blue_col);
+    background-color: #fff
+}
+.blueCircle {
+    background-color: var(--blue_col);
+    border-radius: 100%;
+}
+.topHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 999;
+}
+
+.topHeader .container {
+    width: 1600px!important;
+    max-width: 1600px!important
+}
+
+.topHeader.otherHeader {
+    padding: 15px 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .3);
+    background-color: #fff
+}
+
+.topHeader.otherHeader .rightSection a.number,
+.topHeader.otherHeader .rightSection a.languageSwitcher,
+.topHeader.otherHeader .rightSection a.whatsapp {
+    background-color: #F6F7FA;
+    color: var(--indigo_sections_col)
+}
+
+.topHeader.otherHeader .rightSection a.number i,
+.topHeader.otherHeader .rightSection a.languageSwitcher i,
+.topHeader.otherHeader .rightSection a.whatsapp i {
+    color: var(--blue_col)
+}
+
+.topHeader.otherHeader .rightSection a.menuOpenerHolder h6 {
+    color: var(--indigo_sections_col);
+    text-shadow: none
+}
+
+.topHeader.otherHeader .rightSection a.menuOpenerHolder span {
+    background-color: var(--indigo_sections_col)
+}
+.topHeader .leftSection {
+    float: left;
+}
+.topHeader .leftSection a {
+    display: inline-block;
+}
+.topHeader .leftSection a.logoHolder {
+   position: relative;
+}
+.topHeader .leftSection a img {
+    max-width: 193px;
+    height: auto;
+}
+
+.topHeader .leftSection ul {
+    margin: 14px 0 14px 30px;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top ;
+}
+
+.topHeader .leftSection ul li {
+    display: inline-block;
+    margin: 0 15px 0 0
+}
+
+.topHeader .leftSection ul li a {
+    font-size: 15px;
+    color: #000;
+    font-family: "lato-light", "thesans-light", sans-serif
+}
+
+.topHeader .leftSection ul li a:hover {
+    color: var(--blue_col)
+}
+
+.topHeader .leftSection ul li.active a {
+    color: var(--blue_col);
+    font-family: "lato-semibold", "thesans-bold", sans-serif
+}
+
+.topHeader .rightSection {
+    display: inline-block;
+    position: relative;
+    left: 49rem;
+}
+
+.topHeader .rightSection a {
+    display: inline-block;
+    vertical-align: top
+}
+
+.topHeader .rightSection a.number,
+.topHeader .rightSection a.whatsapp {
+    color: #fff;
+    font-family: "lato-bold", "thesans-bold", sans-serif;
+    font-size: 17px;
+    padding: 13px 22px;
+    display: inline;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 22px
+}
+.topHeader .rightSection a.whatsapp:hover {
+    color: #fff;
+    background-color: var(--blue_col);
+}
+.topHeader .rightSection a.number i,
+.topHeader .rightSection a.whatsapp i {
+    transform: rotate(-32deg);
+    margin: 0 10px 0 0
+}
+
+.topHeader .rightSection a.whatsapp.desktop {
+    display: inline-block;
+}
+
+.topHeader .rightSection a.whatsapp.mobile {
+    display: none
+}
+
+
+.topHeader .rightSection a.whatsapp img {
+    max-width: 20px;
+    margin-left: 10px
+}
+.topHeader  .menuOpenerHolder {
+    position: relative;
+    top: -62px;
+    right: -71rem;
+    margin: 0 0 0 25px;
+    cursor: pointer
+}
+
+.topHeader .rightSection a.languageSwitcher {
+    display: inline-block;
+    width: 82px;
+    height: 38px;
+    border-radius: 46%;
+    border: 2px solid rgba(246, 246, 246, 0.571);
+    text-align: center;
+    line-height: 36px;
+    font-size: 15px;
+    color: #fff;
+    font-family: "lato-bold", "thesans-bold", sans-serif;
+    margin: 0 20px 0 0;
+}
+.topHeader .rightSection a.languageSwitcher:hover {
+    background-color: #fff;
+    color:rgba(37, 5, 49, 0.224);;
+}
+
+.topHeader.scrolling {
+    background-color: var(--indigo_sections_col);
+    padding: 10px 0
+}
+
+.topHeader.scrolling .rightSection {
+    min-width: 200px
+}
+
+.topHeader.scrolling .rightSection .languageSwitcher {
+    width: 43px;
+    height: 43px;
+    line-height: 40px
+}
+
+.topHeader.scrolled  .menuOpenerHolder {
+    display: inline-block!important
+}
+
+
+body.home .topNotice h3 a {
+    color: var(--blue_col);
+    text-decoration: underline
+}
+body.home .topHeader {
+    top: -7px;
+}
+#scrollToTop {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    font-size: 36px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45;
+    cursor: pointer;
+}
+#scrollToTop i {
+    display: flex;
+    color:#9d9b9e87;
+}
+#scrollToTop i:hover {
+    color: #fff;
+}
+.fullMenuWrapper {
+    position: fixed;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    height: 100%;
+    width: 25%;
+    border-bottom: 8px solid var(--blue_col);
+    transition: right 0.5s ease;
+}
+
+.fullMenuWrapper.openMe {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fullMenuWrapper .closeHolder i {
+    color: #fff;
+    font-size: 37px;
+}
+.fullMenuWrapper .middleMenuHolder {
+    position: relative;
+}
+.fullMenuWrapper .middleMenuHolder ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.fullMenuWrapper .middleMenuHolder ul.sub-menu {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    width: 100%;
+    pointer-events: none;
+}
+.fullMenuWrapper .middleMenuHolder ul.sub-menu li.closeSubMenu a {
+    background-color: rgba(255,255,255, .12);
+    border: 1px solid rgba(255,255,255,.22);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    font-size: 30px!important;
+    padding: 0
+}
+
+.fullMenuWrapper .middleMenuHolder ul.sub-menu li a  {
+    font-size: 25px;
+}
+
+.fullMenuWrapper .middleMenuHolder ul li {
+    margin: 0 0 18px 0;
+}
+
+.fullMenuWrapper .middleMenuHolder ul li a {
+    font-family: "lato-light","thesans-light",sans-serif;
+    font-size: 11px;
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 0 10px 0;
+    transition: transform 0.5s ease;
+}
+.fullMenuWrapper .middleMenuHolder ul li a:hover
+{
+    transform: scale(2);
+    color: var(--blue_col);
+}
+
+
+.fullMenuWrapper .middleMenuHolder ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 27px;
+    background-color: var(--blue_col);
+    height: 1px;
+    transition: width 0.5s ease;
+}
+.fullMenuWrapper .middleMenuHolder ul li a:hover::after {
+    width: 100%;
+}
+.fullMenuWrapper .middleMenuHolder.subMenuOpened ul li a {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+.fullMenuWrapper .middleMenuHolder.subMenuOpened ul.sub-menu.getMe {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+    pointer-events: all;
+}
+.fullMenuWrapper .middleMenuHolder.subMenuOpened ul.sub-menu li {
+    margin: 0;
+}
+.fullMenuWrapper .middleMenuHolder.subMenuOpened ul.sub-menu li:nth-child(2) {
+    margin: 20px 0 30px 0;
+    cursor: default;
+    pointer-events: none;
+}
+.fullMenuWrapper .middleMenuHolder.subMenuOpened ul.sub-menu li:nth-child(2) a {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.fullMenuWrapper .middleMenuHolder.subMenuOpened ul.sub-menu li:nth-child(2) a:after {
+    display: block;
+}
+.fullMenuWrapper .middleMenuHolder.subMenuOpened ul.sub-menu li a {
+    opacity: 1;
+    font-size: 24px;
+    visibility: visible;
+    z-index: 5;
+    text-transform: capitalize;
+}
+
+
+.fullMenuWrapper .closeHolder {
+    position: absolute;
+    top: 3%;
+    right: 17px;
+}
+.fullMenuWrapper .closeHolder i:hover {
+    color: var(--blue_col)
+}
+
+.fullMenuWrapper .languageSwitcher  .l1 {
+    position: absolute;
+    top: 93px;
+    right: 108px;
+    width: 103px;
+    height: 49px;
+    border-radius: 100%;
+    border: 1px solid rgba(255,255,255, .32);
+    text-align: center;
+    line-height: 47px;
+    font-size: 15px;
+    color: #fff;
+    font-family: "lato-bold","thesans-bold",sans-serif;
+}
+.fullMenuWrapper .languageSwitcher  .l2 {
+    position: absolute;
+    top: 93px;
+    right: 20px;
+    width: 103px;
+    height: 49px;
+    border-radius: 100%;
+    border: 1px solid rgba(255,255,255, .32);
+    text-align: center;
+    line-height: 47px;
+    font-size: 15px;
+    color: #fff;
+    font-family: "lato-bold","thesans-bold",sans-serif;
+}
+.fullMenuWrapper .languageSwitcher .l1:hover,
+.fullMenuWrapper .languageSwitcher .l2:hover {
+    background-color: #fff;
+    color: var(--blue_col)
+}
+.fullMenuWrapper .socialMediaHolder {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.fullMenuWrapper .socialMediaHolder li {
+    position: relative;
+    margin: 0 8px;
+    padding: 0 12.5px;
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+.fullMenuWrapper .socialMediaHolder li:hover {
+    transform: scale(2);
+}
+
+
+.fullMenuWrapper .socialMediaHolder li a {
+    color: #fff;
+    font-size: 22px;
+}
+.fullMenuWrapper .socialMediaHolder li a:hover {
+    color: var(--blue_col)
+}
+.fullMenuWrapper .socialMediaHolder li:nth-last-child(1):after {
+    display: none;
+}
+
+
+.homePage .firstSection {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center
+}
+
+
+.homePage .firstSection:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: rotate(180deg);
+    background-color: transparent;
+    background-image: linear-gradient(#352434 0%, rgba(204, 122, 205, 0.6) 35%, rgba(83, 52, 52, 0.15) 100%)
+
+}
+
+.homePage .firstSection .innerSection {
+    z-index: 5;
+    position: relative
+}
+
+.homePage .firstSection .innerSection h4 {
+    color: #fff;
+    font-size: 17px;
+    margin: 0 0 15px 0;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, .6)
+}
+
+.homePage .firstSection .innerSection h1 {
+    color: #fff;
+    font-size: 47px;
+    margin: 0
+}
+
+
+
+
+.homePage .firstSection .bottomSection {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.homePage .firstSection .bottomSection .container {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    bottom: -10px;
+  
+}
+
+
+.homePage .firstSection .bottomSection .container .bottomColumn {
+    flex: 0 0 255px;
+    padding: 0 20px;
+    position: relative;
+    max-height: 77px;
+    overflow: hidden;
+    transition: max-height 1.2s ease;
+
+}
+
+.homePage .firstSection .bottomSection .container .bottomColumn:hover,
+.homePage .firstSection .bottomSection .container .bottomColumn.active {
+    max-height: 240px
+}
+
+.homePage .firstSection .bottomSection .container .bottomColumn:before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, .18);
+    top: 0;
+    left: 0
+}
+
+.homePage .firstSection .bottomSection .container .bottomColumn img {
+    width: 100%;
+    max-width: 48px;
+    height: 48px;
+    margin: 0 0 12px 0
+}
+
+.homePage .firstSection .bottomSection .container .bottomColumn h3 {
+    color: #fff;
+    font-size: 15px;
+    font-family: "lato-bold", "thesans-bold", sans-serif;
+    margin: 0 0 6px 0
+}
+
+.homePage .firstSection .bottomSection .container .bottomColumn span {
+    margin: 10px 0;
+    font-size: 12px;
+    font-style: italic;
+    color: #fff;
+    display: block
+}
+
+.homePage .firstSection .bottomSection .container .bottomColumn span img {
+    vertical-align: middle;
+    width: 15px;
+    height: auto;
+    margin: 0 5px 0 0
+}
+
+.homePage .firstSection .bottomSection .container .bottomColumn .content {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.homePage .firstSection .bottomSection .container .bottomColumn a {
+    color: #fff;
+    font-family: "lato-bold", "thesans-bold", sans-serif;
+    font-size: 15px;
+    padding: 10px 15px 12px 15px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 7px;
+    margin: 12px 0 0 0
+}
+.homePage .firstSection .bottomSection .container .bottomColumn a:hover,
+.homePage .firstSection .bottomSection .container .bottomColumn a:focus {
+    background-color: var(--blue_col);
+    color: var(--indigo_sections_col)
+}
+.homePage .firstSection .bottomSection .container .bottomColumn a i {
+    margin: 0 0 0 20px
+}
+
+.homePage .firstSection .bottomSection .container .covidSection {
+    position: absolute;
+    right: 15px;
+    bottom: -30px;
+    background-color: var(--blue_col);
+    width: 100%;
+    max-width: 300px;
+    padding: 25px;
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px
+}
+
+.homePage .firstSection .bottomSection .container .covidSection h3 {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    font-family: "lato-bold", "thesans-bold", sans-serif
+}
+
+.homePage .firstSection .bottomSection .container .covidSection h4 {
+    color: #fff;
+    font-size: 15px;
+    line-height: 23px;
+    margin: 0 0 15px 0
+}
+
+.homePage .firstSection .bottomSection .container .covidSection .blueButton {
+    padding: 10px 18px 11px 18px;
+    border-color: rgba(255, 255, 255, .36);
+    font-size: 13px
+}
+
+.homePage .firstSection .bottomSection .container .covidSection .blueButton:nth-of-type(1) {
+    margin: 0 5px 0 0;
+    background-color: #fff;
+    color: var(--blue_col)
+}
+
+.homePage .firstSection .backVideoWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    overflow: hidden
+}
+
+.homePage .firstSection .backVideoWrapper iframe {
+    width: 100vw;
+    height: 56.25vw;
+    min-height: 100vh;
+    min-width: 177.77vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1
+}
+
+.homePage .firstSection .backVideoWrapper iframe.showMe {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2
+}
+
+.homePage .firstSection .backVideoWrapper iframe.showMeHovered {
+    opacity: 1;
+    visibility: visible;
+    z-index: 5
+}
+
+.homePage .covidSection.forMobile {
+    display: none;
+    background-color: var(--blue_col);
+    width: 100%;
+    padding: 25px;
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px
+}
+
+.homePage .covidSection.forMobile .leftSection {
+    flex: 0 0 60%;
+    width: 60%
+}
+
+.homePage .covidSection.forMobile .leftSection h3 {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    font-family: "lato-bold", "thesans-bold", sans-serif
+}
+
+.homePage .covidSection.forMobile .leftSection h4 {
+    color: #fff;
+    font-size: 15px;
+    line-height: 23px;
+    margin: 0
+}
+
+.homePage .covidSection.forMobile .rightSection {
+    flex: 0 0 40%;
+    width: 40%;
+    text-align: right
+}
+
+.homePage .covidSection.forMobile .rightSection .blueButton {
+    padding: 10px 20px 13px 20px;
+    border-color: rgba(255, 255, 255, .36)
+}
+
+.homePage .covidSection.forMobile .rightSection .blueButton:nth-of-type(1) {
+    margin: 0 5px 0 0
+}
+
+.homePage .secondSection {
+    background-color: #fff;
+    padding: 100px 0;
+    background-size: 700px;
+    background-position: 100% 0;
+}
+.homePage .secondSection .container {
+    padding: 0px 14rem 0px 5rem;
+}
+.homePage .secondSection .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.homePage .secondSection .leftSection {
+    flex: 1;
+    text-align: left;
+}
+.homePage .secondSection .rightSection {
+    flex: 1;
+    text-align: right;
+}
+
+.homePage .secondSection .leftSection h2 {
+    color: var(--indigo_sections_col);
+    font-size: 42px;
+    font-family: "lato-light", "thesans-light", sans-serif;
+    line-height: 47px;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    max-width: 500px;
+    width: 100%
+}
+
+.homePage .secondSection .leftSection p {
+    color: #A3ABB7;
+    font-size: 15px;
+    line-height: 23px;
+    margin: 0 0 18px 0;
+    max-width: 390px;
+    width: 100%
+}
+
+.homePage .secondSection .rightSection .innerRightSection {
+    display: flex;
+    justify-content: flex-end
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.homePage .secondSection .rightSection .innerRightSection .circle {
+    width: 134px; 
+    height: 134px;
+    position: relative;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+
+.homePage .secondSection .rightSection .innerRightSection .circle:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    transform: rotate(83deg);
+    height: 0;
+    margin: 0 auto;
+    left: -3px;
+    right: 0;
+    top: -3px;
+    z-index: 1;
+    border-right: 70px solid var(--blue_col);
+    border-top: 70px solid transparent;
+    border-left: 70px solid var(--blue_col);
+    border-bottom: 70px solid var(--blue_col);
+    border-radius: 70px;
+}
+
+.homePage .secondSection .rightSection .innerRightSection .circle .innerCircle {
+    background-color: #fff;
+    border-radius: 100%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3);
+    position: relative;
+    z-index: 5
+}
+
+.homePage .secondSection .rightSection .innerRightSection .circle .innerCircle h3 {
+    font-size: 35px;
+    margin: 0 0 10px 0;
+    color: var(--blue_col);
+    font-family: "lato-bold", "thesans-bold", sans-serif
+}
+
+.homePage .secondSection .rightSection .innerRightSection .circle .innerCircle h4 {
+    font-size: 12px;
+    font-family: "lato-semibold", "thesans-bold", sans-serif;
+    margin: 0
+}
+
+.homePage .secondSection .rightSection .innerRightSection .circle:nth-child(2) {
+    margin: 40px 30px 0 30px
+}
+
+.homePage .secondSection .rightSection .innerRightSection .circle:nth-child(3) {
+    margin: 80px 0 0 0
+}
+/*
+.homePage .secondSection .rightSection .innerRightSection .circle.animated:after {
+    width: 176px;
+    height: 192px;
+    border-radius: 150px;
+    transition: all 0.5s ease;
+}
+*/
+
+
+.homePage .thirdSection {
+    background-color: rgba(239, 242, 247, .58);
+    position: relative;
+    padding: 50px 0
+}
+
+.homePage .thirdSection:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 67%;
+    height: 100%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 48%;
+    background-color: var(--indigo_sections_col)
+}
+
+.homePage .thirdSection .swiper-container .swiper-slide .container {
+    position: relative;
+    margin: 0 0 15px 0;
+    font-family: "math";
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container .leftSection  {
+    padding: 0 15px 0 0
+}
+
+.homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection {
+    width: 100%;
+    max-width: 400px;
+}
+
+.homePage .thirdSection .swiper-container .swiper-slide .container .row {
+    align-items: center;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container .sectionTitle {
+    display: inline-block;
+    left: 0;
+    top: 0;
+    font-family: "lato-light",sans-serif;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 0 10px 0;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container .sectionTitle:after {
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--blue_col);
+    height: 1px;
+    width: 35px;
+    transition: width 0.3s ease;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container .sectionTitle:hover::after {
+    width: 100%;
+}
+
+
+.homePage .thirdSection .swiper-container .swiper-slide .container  .leftSection .innerLeftSection .numberAndSocialMedia {
+    margin: 0 0 20px 0;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container  .leftSection .innerLeftSection .numberAndSocialMedia a {
+   border: 1px solid rgba(255,255,255, .13);
+   font-size: 13px;
+   display: inline-block;
+   border-radius: 24px;
+   color: #fff;
+   cursor: pointer;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container  .leftSection .innerLeftSection .numberAndSocialMedia a:hover {
+    background-color: var(--blue_col);
+   
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container  .leftSection .innerLeftSection .numberAndSocialMedia a.numberBtn {
+    padding: 10.5px 15px;
+    margin: 7px 10px 7px 0;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container  .leftSection .innerLeftSection .numberAndSocialMedia a.numberBtn i {
+    transform: rotate(-45deg);
+    margin: 0 8px 0 0;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container  .leftSection .innerLeftSection .numberAndSocialMedia ul {
+    display: inline-block;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container  .leftSection .innerLeftSection .numberAndSocialMedia ul li  {
+   display: inline-block;
+    margin: 0 10px 0 0;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container  .leftSection .innerLeftSection .numberAndSocialMedia ul li a {
+   width: 36px;
+   height: 36px;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   border-radius: 100%;
+   font-size: 16px;
+    display: flex;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container  .leftSection .innerLeftSection  .description {
+    color: #fff;
+    line-height: 24px;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container  .leftSection .innerLeftSection  .buttonsHolder {
+    margin: 35px 0 0 0 ;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container  .leftSection .innerLeftSection  .buttonsHolder a {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .12);
+    position: relative;
+    height: 44px;
+    line-height: 44px;
+    font-size: 13px;
+    border-radius: 24px;
+    color: #fff;
+    padding: 0 47px 0 55px;
+    cursor: pointer;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container  .leftSection .innerLeftSection  .buttonsHolder a:hover {
+    background-color: var(--blue_col);
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container  .leftSection .innerLeftSection  .buttonsHolder a:nth-child(2) {
+    margin: 0 0 0 15px;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container  .leftSection .innerLeftSection  .buttonsHolder  a span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 44px;
+    height: 44px;
+    background-color: var(--blue_col);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.homePage .forthSection {
+    position: relative;
+    padding: 75px 0 75px 0;
+}
+.homePage .forthSection:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: transparent;
+    background-image: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, .6) 35%, rgba(255, 255, 255, 0) 100%);
+
+}
+.homePage .forthSetion.showShadow:after {
+    width: 250px;
+}
+.homePage .forthSection .sliderWrapper {
+    position: relative;
+}
+.homePage .forthSection .sliderWrapper .sectionTitle {
+    font-size: 42px;
+    color: var(--indigo_sections_col);
+    margin: 0 0 30px 0;
+    font-family: "lato-light",sans-serif; 
+    cursor: pointer;
+    display: inline-block;
+    left: 327px;
+    top: 0;
+    position: relative;
+    padding: 0 0 15px 0;
+    
+}
+.homePage .forthSection .sliderWrapper .sectionTitle:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--blue_col);
+    height: 2px;
+    width: 35px;
+    transition: width 0.3s ease;
+
+}
+
+
+.homePage .forthSection .sliderWrapper .sectionTitle:hover::after {
+    width: 100%;
+}
+.homePage .forthSection .sliderWrapper .swiper-container {
+    padding: 0 0 0 20%;
+}
+.homePage .forthSection .sliderWrapper .swiper-container .swiper-slide {
+    padding: 0 0 10px 0;
+  
+    
+}
+.homePage .forthSection .sliderWrapper .swiper-container  .descriptionHolder {
+    padding: 20px 15px;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, .2);
+    background-color: #fff;
+
+}
+.homePage .forthSection .sliderWrapper .swiper-container  .descriptionHolder h4 {
+    background-color: #F6F7FA;
+    color: var(--blue_col);
+    font-size: 12px;
+    font-family: "lato-bold","thesans-bold", sans-serif;
+    padding: 9px 14px;
+    margin: 0 0 15px 0;
+    border-radius: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+    
+}
+.homePage .forthSection .sliderWrapper .swiper-container  .descriptionHolder h4:hover {
+    background-color: var(--blue_col);
+    color: #fff;
+}
+.homePage .forthSection .sliderWrapper .swiper-container  .descriptionHolder h3 {
+    color: var(--indigo_sections_col);
+    font-size: 15px;
+    font-family: "lato-bold","thesans-bold", sans-serif;
+    line-height: 22px;
+    min-height: 81px;
+    padding: 0 0 15px 0;
+    margin: 0 0 15px 0;
+    position: relative;
+}
+.homePage .forthSection .sliderWrapper .swiper-container  .descriptionHolder h3:after {
+    content: "";
+    position: absolute;
+    width: 68px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #d6dae2; 
+}
+.homePage .forthSection .sliderWrapper .swiper-container  .descriptionHolder h5 {
+    color: var(--blue_col);
+    font-size: 14px;
+    font-family: "lato-bold", sans-serif;
+}
+.homePage .forthSection .sliderWrapper .navAndPag {
+    margin: 30px 0 0 0;
+    padding: 0 0 0 20%;
+    display: flex;
+    width: 87%;
+    align-items: center
+}
+.homePage .forthSection .sliderWrapper .navAndPag .articlesSliderPag {
+    position: relative;
+    height: 4px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #f6f7fA
+}
+.homePage .forthSection .sliderWrapper .navAndPag .articlesSliderPag .swiper-pagination-progressbar-fill {
+    border-radius: 3px;
+    background-color: var(--blue_col);
+}
+.homePage .forthSection .sliderWrapper .navAndPag .navigationWrapper {
+    display: flex;
+    margin: 0 0 0 10px;
+}
+.homePage .forthSection .sliderWrapper .navAndPag .navigationWrapper .articlesSliderNav {
+   color: var(--blue_col);
+   font-size: 26px;
+   margin: 0 5px;
+   cursor: pointer;
+
+}
+.homePage .forthSection .sliderWrapper .navAndPag .navigationWrapper .articlesSliderNav.swiper-button-disabled {
+    opacity: .3
+}
+.slide-shadow {
+    box-shadow: 0 0  10px rgba(0, 0, 0, 0.2);
+}
+.homePage .fifthSection { 
+    padding: 70px 0 100px 0;
+    margin-top: 4rem;
+}
+.homePage .fifthSection .sectionIdentifier {
+    margin: 0 0 30px 0;
+    height: 0;
+    
+}
+.homePage .fifthSection .sectionIdentifier h2 {
+    font-size: 42px;
+    margin: 0 34px 15px 0;
+    padding: 0 0 15px 0;
+    position: relative; 
+    cursor: pointer;
+}
+.homePage .fifthSection .sectionIdentifier h2:after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--blue_col);
+    transition: width 0.3s ease; 
+}
+.homePage .fifthSection .sectionIdentifier h2:hover::after {
+    width: 100%;
+}
+.homePage .fifthSection .leftSection {
+    text-align: right;
+}
+.homePage .fifthSection .leftSection .imageHolder {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    bottom: 10rem;
+    left: 4rem;
+}
+.homePage .fifthSection .leftSection .imageHolder .bigCircle {
+    position: relative;
+    width: 382px;
+    height: 382px;
+    bottom: -40px;
+    left: -50px;
+}
+.homePage .fifthSection .leftSection .imageHolder a.goToBtn {
+    background-color: #fff;
+    text-align: center;
+    color: var(--blue_col);
+    border: 1px solid var(--blue_col);
+    font-size: 14px;
+    font-family: "lato-bold", sans-serif;
+    border-radius: 25px;
+    padding: 11px 0 13px 0;
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+    z-index: 15;
+    width: 165px;
+    height: 39px;
+}
+.homePage .fifthSection .leftSection .imageHolder a.goToBtn:hover {
+    color: #fff;
+    background-color: var(--blue_col);
+    border: 1px solid #fff;
+}
+
+.homePage .fifthSection .rightSection {
+    position: relative;
+    left: 6rem
+}
+.homePage .fifthSection .rightSection .listWrapper {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    z-index: 2;
+    margin: 15px 0 0 45px;
+}
+.homePage .fifthSection .rightSection .listWrapper .eachListWrap {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 0 5px 0;
+    border-radius: 11px;
+    padding: 15px 15px;
+}
+.homePage .fifthSection .rightSection .listWrapper .eachListWrap .descriptionWrap h3 {
+    color: var(--blue_col);
+
+}
+.homePage .fifthSection .rightSection .listWrapper .eachListWrap .descriptionWrap  {
+    padding: 0 0 0 20px;
+}
+
+.homePage .fifthSection .rightSection .listWrapper .eachListWrap .descriptionWrap h4 {
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-top: 8px;
+    color: #888f9a;
+    line-height: 18px;
+    font-size: 13px
+}
+.homePage .fifthSection .rightSection .listWrapper .eachListWrap .iconWrap {
+    flex: 0 0 76px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 22px;
+    width: 76px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.homePage .fifthSection .rightSection .listWrapper .eachListWrap.active {
+    background-color: #9e9e9e4d;
+}
+.homePage .fifthSection .rightSection .listWrapper .eachListWrap.active .iconWrap {
+    background-color: var(--blue_col);
+}
+.blood-donation__section2 {
+    padding-top: 97px;
+    padding-bottom: 91px;
+}
+
+.blood-donation__section2 .container  {
+    position: relative;
+    z-index: 2;
+    width: 100%!important;
+    max-width: 122rem!important;
+    display: inline-block;
+}
+.blood-donation__section2 .blood-donation__section2--title {
+    display: flex;
+    justify-content: center;
+}
+.blood-donation__section2 .blood-donation__section2--title h2 {
+    display: inline-block;
+    font-size: 42px;
+    position: relative;
+    height: 45px;
+    cursor: pointer;
+    padding-bottom: 60px;
+}
+.blood-donation__section2 .blood-donation__section2--title h2:after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: var(--blue_col);
+    transition: width 0.3s ease;
+}
+.blood-donation__section2 .blood-donation__section2--title h2:hover::after {
+    width: 100%;
+}
+
+.blood-donation__section2--image {
+    margin: auto;
+    position: relative;
+    left: 73px;
+    max-width: 712px;
+}
+.blood-donation__section2 .num-left {
+    float: left;
+}
+
+.blood-donation__section2 .num-right {
+    float: right;
+}
+.blood-donation__section2--numbers {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+.blood-donation__section2--numbers li {
+    display: flex;
+    align-items: center;
+    padding-top: 52px;
+    margin-bottom: 45px;
+    position: relative;
+    min-height: 102px;
+}
+.blood-donation__section2--numbers li h4 {
+    font-family: "lato-black", "thesans-bold", sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 39px;
+    text-align:  left;
+    color: #343553;
+    margin-bottom: 0;
+}
+.blood-donation__section2--numbers li img {
+    margin-left: 13px;
+    margin-right: 11px;
+}
+.blood-donation__section2--numbers li span {
+    font-family: "lato-semibold","thesans-bold", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+    color: #343553;
+    cursor: pointer;
+}
+.blood-donation__section2--numbers li span:hover {
+    color: var(--blue_col);
+}
+
+.moreInfoSection {
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+.moreInfoSection .cont-title {
+    display: flex;
+    justify-content: center;
+
+}
+.moreInfoSection h2 {
+    display: inline-block;
+   font-size: 42px;
+   margin: 0 0 40px 0;
+   cursor: pointer;
+   padding: 0 0 1rem 0;
+   position: relative;
+}
+.moreInfoSection h2:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    cursor: pointer;
+    background-color: var(--blue_col);
+    transition: width 0.3s ease;
+}
+.moreInfoSection h2:hover::after {
+    width: 100%;
+}
+.mmoreInfoSection .buttonsHolder {
+    display: flex;
+    justify-content: center;
+}
+#sec_8 .cont-title {
+    display: flex;
+    justify-content: left;
+    margin: 0 0 0 1rem;
+}
+#sec_8 .cont-title h2 {
+    display: inline-block;
+    font-size: 42px;
+    cursor: pointer;
+    padding: 0 0 1rem 0;
+    margin: 0;
+    position: relative;
+}
+.moreInfoSection h3 {
+    display: flex;
+    font-size: 21px;
+    color: #A3ABB7;
+    margin: 25px 0;
+    padding: 0 15px;
+}
+.moreInfoSection .buttonsHoldeer a {
+    margin: 0 10px;
+    min-width: 136px;
+}
+.moreInfoSection .buttonsHoldeer a.whatsAppButton {
+    display: inline-block;
+    padding: 10px 24px 7px 24px;
+    min-width: 136px;
+}
+
+.moreInfoSection .buttonsHolder a.whatsAppButton.mobile {
+    display: inline-block;
+}
+.moreInfoSection .buttonsHoldeer a.phoneButton i ,
+.moreInfoSection .buttonsHolder a.whatsAppButton i {
+    margin: 0 5px 0 0;
+} 
+
+
+footer {
+    position: relative;
+    overflow: hidden;
+    padding: 85px 0 0 0
+}
+
+footer .backPart {
+    background-color: var(--indigo_sections_col);
+    width: 100%;
+    border-radius: 3%;
+    padding: 0 0 0 45px
+}
+
+footer .backPart .topPart {
+    display: flex;
+    padding: 30px 0 50px 0
+}
+
+footer .backPart .topPart .column:nth-child(1) {
+    flex: 0 0 13%
+}
+
+footer .backPart .topPart .column:nth-child(2) {
+    flex: 0 0 15%
+}
+
+footer .backPart .topPart .column:nth-child(3) {
+    flex: 0 0 18%;
+}
+
+footer .backPart .topPart .column:nth-child(4) {
+    flex: 0 0 15%
+}
+footer .backPart .topPart .column:nth-child(4) ul {
+    margin: 0 0 15px 0
+}
+
+footer .backPart .topPart .column:nth-child(5) {
+    flex: 0 0 15%
+}
+
+footer .backPart .topPart .column .columnTitle {
+    font-size: 12px;
+    color: #fff;
+    margin: 0 0 10px 0;
+    padding: 0 0 12px 0;
+    font-family: "lato-black", "thesans-bold", sans-serif;
+    position: relative;
+    text-transform: uppercase;
+}
+
+footer .backPart .topPart .column .columnTitle a {
+    color: #fff
+}
+
+footer .backPart .topPart .column .columnTitle:after {
+    background-color: var(--blue_col);
+    height: 1px;
+    width: 18px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+footer .backPart .topPart .column .columnTitle.customerCareLink a {
+    line-height: 15px
+}
+
+footer .backPart .topPart .column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+footer .backPart .topPart .column ul li {
+    margin: 0 0 5px 0
+}
+
+footer .backPart .topPart .column ul li:nth-last-child(1) {
+    margin: 0
+}
+
+footer .backPart .topPart .column ul li a {
+    font-size: 12px;
+    color: rgba(255, 255, 255, .63)
+}
+
+footer .backPart .topPart .column ul li a:hover {
+    color: #fff
+}
+
+footer .backPart .bottomPart {
+    padding: 15px 240px 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, .14)
+}
+
+footer .backPart .bottomPart ul {
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+footer .backPart .bottomPart ul li {
+    display: inline-block;
+    padding: 0 18px 0 0;
+    margin: 0 15px 0 0;
+    position: relative;
+    vertical-align: text-bottom;
+}
+
+footer .backPart .bottomPart ul li:after {
+    content: "";
+    width: 1px;
+    height: 10px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(201, 213, 226, .21);
+    position: absolute
+}
+
+footer .backPart .bottomPart ul li:nth-last-child(1):after {
+    display: none
+}
+
+footer .backPart .bottomPart ul li a {
+    color: #fff;
+    font-size: 12px;
+    display: block
+}
+
+footer .backPart .bottomPart ul li a:hover {
+    color: var(--blue_col)
+}
+
+footer .backPart .bottomPart ul.socialMediaHolder {
+    display: none
+}
+
+footer .frontPart {
+    background-color: #3d3c62;
+    width: 490px;
+    height: 430px;
+    position: absolute;
+    bottom: -85px;
+    right: -40px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 87%;
+    border-bottom-right-radius: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 50px;
+    justify-content: flex-start
+}
+
+footer .frontPart .innerFrontPart {
+    width: 100%;
+    max-width: 360px;
+    margin: -25px 0 0 0
+}
+
+footer .frontPart .innerFrontPart h2 {
+    color: #fff;
+    font-size: 30px;
+    line-height: 34px;
+    margin: 0 0 25px 0;
+    width: 100%;
+}
+
+footer .frontPart .innerFrontPart form {
+    position: relative;
+    width: 100%
+}
+
+footer .frontPart .innerFrontPart form input.email {
+    width: 100%;
+    border: 1px solid rgba(230, 234, 242, .15);
+    height: 44px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 25px;
+    padding: 0 134px 0 15px;
+    background-color: transparent;
+    cursor: pointer;
+}
+footer .frontPart .innerFrontPart form input.email:hover,
+footer .frontPart .innerFrontPart form input.email:focus {
+    background-color: #fff;
+    color: var(--indigo_sections_col);
+}
+
+footer .frontPart .innerFrontPart form  input.submitNewsletterEmail {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -25px;
+    max-width: 125px;
+    font-size: 13px;
+    padding: 13px 16px 15px 16px
+}
+footer .frontPart h4 {
+    position: absolute;
+    bottom: 105px;
+    left: 40px;
+    color: rgba(255,255,255, .57);
+    font-size: 11px;
+    margin: 6px 0;
+}
+footer .frontPart .socialMediaHolder {
+    position: absolute;
+    bottom: 105px;
+    right: 90px;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+footer .frontPart .socialMediaHolder li {
+    display: inline-block;
+    margin: 0 0 0 10px
+}
+
+footer .frontPart .socialMediaHolder li:nth-child(1) {
+    margin: 0
+}
+
+footer .frontPart .socialMediaHolder li a {
+    color: #fff;
+    font-size: 22px
+}
+
+footer .frontPart .socialMediaHolder li a:hover {
+    color: var(--blue_col)
+}
+/*MEDIA QUERY*/
+/*Mobile S */
+@media (max-width: 320px) {
+        body.home .topHeader {
+        top: 1px !important;
+    }
+    .topHeader .rightSection a.languageSwitcher {
+        margin: 3px 10px 0 0 !important;
+        width: 54px  !important;
+        height: 26px !important;
+        line-height: 23px  !important;
+        font-size: 10px  !important;
+        position: relative !important ;
+        left: -9rem !important;
+    }
+    .topHeader .rightSection a.whatsapp.desktop {
+        width: 5rem !important;
+        height: 2rem !important ;
+        position: relative  !important;
+        top: -1px !important;
+        left: -10rem  !important;
+        margin: 3px 7px 0;
+    }
+    .topHeader .rightSection a.whatsapp.desktop span {
+        display: flex !important;
+        font-size: 12px !important;
+        align-items: center !important ;
+        justify-content: center !important ;
+        position: relative !important ;
+        white-space: nowrap !important;
+
+    }
+    .topHeader .menuOpenerHolder {
+        position: relative !important;
+        top: -5rem !important;
+    }
+    .fullMenuWrapper.openMe {
+        right: 9rem!important;
+        opacity: 1!important;
+        z-index: 9999!important;
+        display: flex!important;
+        justify-content: center!important;
+        align-items: center!important;
+    }
+    .fullMenuWrapper .closeHolder i {
+        color: #fff !important;
+        font-size: 28px !important;
+    }
+    .fullMenuWrapper .languageSwitcher .l1 {
+        position: absolute !important;
+        top: 120px !important;
+        right: 46px !important;
+        width: 56px !important;
+        height: 24px !important;
+        border-radius: 100% !important;
+        border: 1px solid rgba(255,255,255, .32) !important;
+        text-align: center !important;
+        line-height: 23px !important;
+        font-size: 10px !important;
+        color: #fff !important;
+    }
+    .fullMenuWrapper .languageSwitcher .l2 {
+        position: absolute !important;
+        top: 120px !important;
+        right: 93px !important;
+        width: 56px !important;
+        height: 24px !important;
+        border-radius: 100% !important;
+        border: 1px solid rgba(255,255,255, .32) !important;
+        text-align: center !important;
+        line-height: 23px !important;
+        font-size: 10px !important;
+        color: #fff !important;
+    }
+    .fullMenuWrapper .middleMenuHolder ul {
+        margin: 0 0 0 28px!important;
+        padding: 0 !important;
+
+    }
+    .fullMenuWrapper .middleMenuHolder ul li a {
+        font-size: 9px !important;
+        padding: 0 0 13px 0 !important;
+        color: #fff !important;
+        display: inline-block !important;
+        position: relative !important;
+        transition: transform 0.5s ease !important; 
+    }
+    .fullMenuWrapper .socialMediaHolder li {
+        position: relative !important;
+        padding: 0 5px 0 2px !important;
+        display: inline-block !important;
+        transition: transform 0.5s ease !important;
+
+    }
+    .homePage .firstSection .innerSection {
+        position: relative !important;
+        top: -77px !important;
+
+    }
+    .homePage .firstSection .innerSection h1 {
+        font-size: 21px !important;
+    }
+    .homePage .firstSection .bottomSection {
+        overflow-x: auto!important;
+    }
+    .homePage .firstSection .bottomSection .container .bottomColumn {
+        flex: 0 0 calc(20% + 57px) !important;
+    }
+    .homePage .secondSection {
+        padding: 30px 0 35px !important;
+        height: 31rem !important;
+    }
+    .homePage .secondSection .container {
+        padding: 0 0 0 2rem !important;
+    }
+    .homePage .secondSection .leftSection p {
+        max-width: 302px !important;
+        }
+    .homePage .secondSection .rightSection {
+        position: relative!important;
+        top: 15rem !important;
+        right: 75rem !important;
+    }
+    .homePage .secondSection .rightSection .innerRightSection {
+        position: relative!important;
+        display: flex!important;
+        left: 23px!important;
+    }
+    .homePage .secondSection .rightSection .innerRightSection .circle {
+        margin-right: 27px !important ;
+        width: 37px !important;
+    }
+    .homePage .secondSection .rightSection .innerRightSection .circle:nth-child(2) {
+        margin: 40px 30px 0 30px!important;
+    }
+    .homePage .secondSection .rightSection .innerRightSection .circle:nth-child(3) {
+        margin: 80px 0 0 23px!important;
+    }
+    
+    .homePage .thirdSection:before {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container {
+        padding: 6px 0 6px 24px !important;
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container .sectionTitle {
+        left: -17px !important;
+        top: 0 !important;
+        font-size: 21px!important;
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .description {
+        width: 75% !important;
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .description p {
+        font-size: 12px!important;
+        line-height: 16px !important;
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a {
+        height: 42px !important;
+        line-height: 44px !important;
+        font-size: 11px !important;
+        padding: 0 45px 0 54px !important;
+    } 
+    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a:nth-child(2) {
+        display: flex!important;
+        margin: 10px 0 0 0 !important;
+        width: 49% !important;
+
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder {
+        margin: 10px 0 0 0;
+       }
+       .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a {
+         margin: 0 18px 0 0;
+        }
+        .homePage .thirdSection .swiper-container .swiper-slide .container .paginationHolder .hospitalsSliderPag .swiper-pagination-bullet {
+         margin:  0 5px;
+        }
+        .homePage .thirdSection .swiper-container .swiper-slide .container .allHospitalsBtn {
+         margin:  20px 0;
+         font-size: 12px;
+        }
+        .homePage .forthSection .sliderWrapper .swiper-container {
+            padding: 0 0 0 10%!important;
+        }
+        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide,
+        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active,
+        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-next ,
+        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-prev {
+            width: 100%!important;
+        }
+        .homePage .forthSection .dotsImage {
+         right: -90px;
+        }
+        .homePage .fifthSection .leftSection .imageHolder {
+            bottom: 3rem!important;
+            left: -9rem!important;
+        }
+        .homePage .fifthSection .row .leftSection .imageHolder  .bigCircle {
+         width: 301px!important;
+         height: 301px!important;
+        }
+        .homePage .fifthSection .leftSection .imageHolder .bigCircle {
+            position: relative!important;
+            bottom: -40px!important;
+            left: -19px!important;
+        }
+        .homePage .fifthSection .rightSection .listWrapper .eachListWrap .descriptionWrap {
+            padding: 0 0 0 15px!important;
+        }
+        .homePage .fifthSection  .rightSection { 
+         padding: 10px 0 0 0!important;
+         position: relative!important;
+         left: -33rem!important;
+         top: 17rem!important;
+        }
+        .homePage .fifthSection .row .rightSection .listWrapper .eachListWrap {
+            padding: 15px 30px 10px!important;
+            margin: 0 24px 0 0!important;
+        }
+        .blood-donation__section2 {
+            position: relative!important;
+            top: 17rem!important;
+        }
+        .blood-donation__section2 .blood-donation__section2--title h2 {
+            bottom: 7rem!important;
+        }
+        .blood-donation__section2 .blood-donation__section2--title h2:after {
+            bottom: -35px!important;
+        }
+        .blood-donation__section2--image {
+            left: -37px!important;
+            max-width: 336px!important;
+        }
+        .sixthSection {
+            margin: 8rem 0 0 0!important;
+        }
+        .moreInfoSection h2:after {
+            left: 43px!important;
+        }
+        #sec_8 .cont-title {
+            margin: -5rem 0 0 1rem!important;
+        }
+    
+    footer{
+        padding: 56px 0 0 0!important;
+        height: 38rem!important;
+    }
+    
+     footer .backPart .topPart {
+        height: 399px!important;
+     }
+     footer .backPart .topPart .column {
+        position: relative!important;
+        top: 4rem!important;
+     }
+    
+     footer .backPart .bottomPart {
+        position: relative!important;
+        top: 2rem!important;
+    }
+     footer .backPart .bottomPart ul {
+         display: ruby-text!important;
+     }
+     footer .frontPart {
+         height: 7rem!important;
+     }
+     footer .frontPart .innerFrontPart {
+         top: 0rem!important;
+         right: 6rem!important;
+         position: relative!important;
+     }
+     footer .frontPart .innerFrontPart h2 {
+         font-size: 13px!important;
+         display: flex!important;
+         justify-content: left!important;
+         margin: 0 0 12px 0!important;
+     }
+     footer .frontPart .innerFrontPart form {
+         bottom: 1rem!important;
+         width: 80%!important;
+     }
+     footer .frontPart .socialMediaHolder {
+         right: 17rem!important;
+     }
+     footer .frontPart .socialMediaHolder li a {
+        font-size: 14px!important;
+     }
+     footer .frontPart h4 {
+        bottom: 7px!important;
+        left: 13px!important;
+        font-size: 10px!important;
+     }
+ 
+}
+
+/*Mobile M */
+@media(max-width: 375px){
+    body.home .topHeader {
+        top: 1px !important;
+    }
+    .topHeader .rightSection a.languageSwitcher {
+        margin: 3px 10px 0 0 !important;
+        width: 54px  !important;
+        height: 26px !important;
+        line-height: 23px  !important;
+        font-size: 10px  !important;
+        position: relative !important ;
+        left: -9rem !important;
+    }
+    .topHeader .rightSection a.whatsapp.desktop {
+        width: 5rem !important;
+        height: 2rem !important ;
+        position: relative  !important;
+        top: -1px !important;
+        left: -10rem  !important;
+        margin: 3px 7px 0;
+    }
+    .topHeader .rightSection a.whatsapp.desktop span {
+        display: flex !important;
+        font-size: 12px !important;
+        align-items: center !important ;
+        justify-content: center !important ;
+        position: relative !important ;
+        white-space: nowrap !important;
+
+    }
+    .topHeader .menuOpenerHolder {
+        position: relative !important;
+        top: -5rem !important;
+    }
+    .fullMenuWrapper {
+        width: 70%!important;
+        }
+    .fullMenuWrapper.openMe {
+        right: 8rem!important;
+        opacity: 1!important;
+        z-index: 9999!important;
+        display: flex!important;
+        justify-content: center!important;
+        align-items: center!important;
+    }
+    .fullMenuWrapper .closeHolder i {
+        color: #fff !important;
+        font-size: 28px !important;
+    }
+    .fullMenuWrapper .languageSwitcher .l1 {
+        position: absolute !important;
+        top: 120px !important;
+        right: 46px !important;
+        width: 56px !important;
+        height: 24px !important;
+        border-radius: 100% !important;
+        border: 1px solid rgba(255,255,255, .32) !important;
+        text-align: center !important;
+        line-height: 23px !important;
+        font-size: 10px !important;
+        color: #fff !important;
+    }
+    .fullMenuWrapper .languageSwitcher .l2 {
+        position: absolute !important;
+        top: 120px !important;
+        right: 93px !important;
+        width: 56px !important;
+        height: 24px !important;
+        border-radius: 100% !important;
+        border: 1px solid rgba(255,255,255, .32) !important;
+        text-align: center !important;
+        line-height: 23px !important;
+        font-size: 10px !important;
+        color: #fff !important;
+    }
+    .fullMenuWrapper .middleMenuHolder ul {
+        margin: 0 0 0 20px!important;
+        padding: 0 !important;
+
+    }
+    .fullMenuWrapper .middleMenuHolder ul li a {
+        font-size: 10px !important;
+        padding: 0 0 13px 0 !important;
+        color: #fff !important;
+        display: inline-block !important;
+        position: relative !important;
+        transition: transform 0.5s ease !important; 
+    }
+    .fullMenuWrapper .socialMediaHolder {
+        left: 24px!important;
+    }
+    .fullMenuWrapper .socialMediaHolder li {
+        position: relative !important;
+        padding: 0 5px 0 2px !important;
+        display: inline-block !important;
+        transition: transform 0.5s ease !important;
+
+    }
+    .homePage .firstSection .innerSection {
+        position: relative !important;
+        top: -77px !important;
+
+    }
+    .homePage .firstSection .innerSection h1 {
+        font-size: 21px !important;
+    }
+ 
+    .homePage .firstSection .bottomSection .container .bottomColumn {
+        flex: 0 0 calc(20% + 57px) !important;
+    }
+    .homePage .secondSection {
+        padding: 30px 0 35px !important;
+        height: 31rem !important;
+    }
+    .homePage .secondSection .container {
+        padding: 0 0 0 2rem !important;
+    }
+    .homePage .secondSection .leftSection p {
+        max-width: 302px !important;
+        }
+    .homePage .secondSection .rightSection {
+        position: relative!important;
+        top: 15rem !important;
+        right: 75rem !important;
+    }
+    .homePage .secondSection .rightSection .innerRightSection {
+        position: relative!important;
+        display: flex!important;
+        left: 23px!important;
+    }
+    .homePage .secondSection .rightSection .innerRightSection .circle {
+        margin-right: 27px !important ;
+        width: 37px !important;
+    }
+    .homePage .secondSection .rightSection .innerRightSection .circle:nth-child(2) {
+        margin: 40px 30px 0 30px!important;
+    }
+    .homePage .secondSection .rightSection .innerRightSection .circle:nth-child(3) {
+        margin: 80px 0 0 23px!important;
+    }
+    
+    .homePage .thirdSection:before {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container {
+        padding: 6px 0 6px 24px !important;
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container .sectionTitle {
+        left: -17px !important;
+        top: 0 !important;
+        font-size: 21px!important;
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .description {
+        width: 75% !important;
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .description p {
+        font-size: 12px!important;
+        line-height: 16px !important;
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a {
+        height: 42px !important;
+        line-height: 44px !important;
+        font-size: 11px !important;
+        padding: 0 45px 0 54px !important;
+    } 
+    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a:nth-child(2) {
+        display: flex!important;
+        margin: 10px 0 0 0 !important;
+        width: 49% !important;
+
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder {
+        margin: 10px 0 0 0;
+       }
+       .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a {
+         margin: 0 18px 0 0;
+        }
+        .homePage .thirdSection .swiper-container .swiper-slide .container .paginationHolder .hospitalsSliderPag .swiper-pagination-bullet {
+         margin:  0 5px;
+        }
+        .homePage .thirdSection .swiper-container .swiper-slide .container .allHospitalsBtn {
+         margin:  20px 0;
+         font-size: 12px;
+        }
+        .homePage .forthSection .sliderWrapper .swiper-container {
+            padding: 0 0 0 10%!important;
+        }
+        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide,
+        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active,
+        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-next ,
+        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-prev {
+            width: 100%!important;
+        }
+        .homePage .forthSection .dotsImage {
+         right: -90px;
+        }
+        .homePage .fifthSection .leftSection .imageHolder {
+            bottom: 3rem!important;
+            left: -9rem!important;
+        }
+        .homePage .fifthSection .row .leftSection .imageHolder  .bigCircle {
+         width: 301px!important;
+         height: 301px!important;
+        }
+        .homePage .fifthSection .leftSection .imageHolder .bigCircle {
+            position: relative!important;
+            bottom: -40px!important;
+            left: -19px!important;
+        }
+        .homePage .fifthSection .rightSection .listWrapper .eachListWrap .descriptionWrap {
+            padding: 0 0 0 15px!important;
+        }
+        .homePage .fifthSection  .rightSection { 
+         padding: 10px 0 0 0!important;
+         position: relative!important;
+         left: -33rem!important;
+         top: 17rem!important;
+        }
+        .homePage .fifthSection .row .rightSection .listWrapper .eachListWrap {
+            padding: 15px 30px 10px!important;
+            margin: 0 24px 0 0!important;
+        }
+        .blood-donation__section2 {
+            position: relative!important;
+            top: 17rem!important;
+        }
+        .blood-donation__section2 .blood-donation__section2--title h2 {
+            bottom: 7rem!important;
+        }
+        .blood-donation__section2 .blood-donation__section2--title h2:after {
+            bottom: -35px!important;
+        }
+        .blood-donation__section2--image {
+            left: -15px!important;
+            max-width: 341px!important;
+        }
+        .sixthSection {
+            margin: 8rem 0 0 0!important;
+        }
+        .moreInfoSection h2:after {
+            left: 43px!important;
+        }
+        #sec_8 .cont-title {
+            margin: -5rem 0 0 1rem!important;
+        }
+    
+    footer{
+        padding: 56px 0 0 0!important;
+        height: 38rem!important;
+    }
+    
+     footer .backPart .topPart {
+        height: 399px!important;
+     }
+     footer .backPart .topPart .column {
+        position: relative!important;
+        top: 4rem!important;
+     }
+    
+     footer .backPart .bottomPart {
+        position: relative!important;
+        top: 2rem!important;
+    }
+     footer .backPart .bottomPart ul {
+         display: ruby-text!important;
+     }
+     footer .frontPart {
+         height: 7rem!important;
+     }
+     footer .frontPart .innerFrontPart {
+         top: 0rem!important;
+         right: 6rem!important;
+         position: relative!important;
+     }
+     footer .frontPart .innerFrontPart h2 {
+         font-size: 13px!important;
+         display: flex!important;
+         justify-content: left!important;
+         margin: 0 0 12px 0!important;
+     }
+     footer .frontPart .innerFrontPart form {
+         bottom: 1rem!important;
+         width: 80%!important;
+     }
+     footer .frontPart .socialMediaHolder {
+         right: 17rem!important;
+     }
+     footer .frontPart .socialMediaHolder li a {
+        font-size: 14px!important;
+     }
+     footer .frontPart h4 {
+        bottom: 7px!important;
+        left: 13px!important;
+        font-size: 10px!important;
+     }
+}
+/*Mobile L */
+@media(max-width: 425px){
+    body.home .topHeader {
+        top: 4px !important;
+    }
+    .topHeader .rightSection {
+        position: relative!important;
+        left: 42rem!important;
+        top: -3rem!important;
+    }
+    .topHeader .rightSection a.languageSwitcher {
+        margin: 3px 10px 0 0 !important;
+        width: 54px  !important;
+        height: 26px !important;
+        line-height: 23px  !important;
+        font-size: 10px  !important;
+        position: relative !important ;
+        left: -9rem !important;
+    }
+    .topHeader .rightSection a.whatsapp.desktop {
+        width: 5rem !important;
+        height: 2rem !important ;
+        position: relative  !important;
+        top: 46px!important;
+        right: 140px!important;
+        margin: 3px 7px 0;
+    }
+    .topHeader .rightSection a.whatsapp.desktop span {
+        display: flex !important;
+        font-size: 12px !important;
+        align-items: center !important ;
+        justify-content: center !important ;
+        position: relative !important ;
+        white-space: nowrap !important;
+
+    }
+    .topHeader .menuOpenerHolder {
+        position: relative !important;
+        top: -5rem !important;
+    }
+    .fullMenuWrapper.openMe {
+        right: 12rem!important;
+        opacity: 1!important;
+        z-index: 9999!important;
+        display: flex!important;
+        justify-content: center!important;
+        align-items: center!important;
+    }
+    .fullMenuWrapper .closeHolder i {
+        color: #fff !important;
+        font-size: 28px !important;
+    }
+    .fullMenuWrapper .languageSwitcher .l1 {
+        position: absolute !important;
+        top: 120px !important;
+        right: 46px !important;
+        width: 56px !important;
+        height: 24px !important;
+        border-radius: 100% !important;
+        border: 1px solid rgba(255,255,255, .32) !important;
+        text-align: center !important;
+        line-height: 23px !important;
+        font-size: 10px !important;
+        color: #fff !important;
+    }
+    .fullMenuWrapper .languageSwitcher .l2 {
+        position: absolute !important;
+        top: 120px !important;
+        right: 93px !important;
+        width: 56px !important;
+        height: 24px !important;
+        border-radius: 100% !important;
+        border: 1px solid rgba(255,255,255, .32) !important;
+        text-align: center !important;
+        line-height: 23px !important;
+        font-size: 10px !important;
+        color: #fff !important;
+    }
+    .fullMenuWrapper .middleMenuHolder ul {
+        margin: 0 0 0 28px!important;
+        padding: 0 !important;
+
+    }
+    .fullMenuWrapper .middleMenuHolder ul li a {
+        font-size: 9px !important;
+        padding: 0 0 13px 0 !important;
+        color: #fff !important;
+        display: inline-block !important;
+        position: relative !important;
+        transition: transform 0.5s ease !important; 
+    }
+    .fullMenuWrapper .socialMediaHolder li {
+        position: relative !important;
+        padding: 0 5px 0 2px !important;
+        display: inline-block !important;
+        transition: transform 0.5s ease !important;
+
+    }
+    .homePage .firstSection .innerSection {
+        position: relative !important;
+        top: -77px !important;
+
+    }
+    .homePage .firstSection .innerSection h1 {
+        font-size: 21px !important;
+    }
+ 
+    .homePage .firstSection .bottomSection .container .bottomColumn {
+        flex: 0 0 calc(20% + 57px) !important;
+    }
+    .homePage .secondSection {
+        padding: 30px 0 35px !important;
+        height: 31rem !important;
+    }
+    .homePage .secondSection .container {
+        padding: 0px 0rem 0px 2rem!important;
+    }
+    .homePage .secondSection .leftSection p {
+        max-width: 302px !important;
+        }
+    .homePage .secondSection .rightSection {
+        position: relative!important;
+        top: 15rem !important;
+        right: 75rem !important;
+    }
+    .homePage .secondSection .rightSection .innerRightSection {
+        position: relative!important;
+        display: flex!important;
+        left: 23px!important;
+    }
+    .homePage .secondSection .rightSection .innerRightSection .circle {
+        margin-right: 27px !important ;
+        width: 37px !important;
+    }
+    .homePage .secondSection .rightSection .innerRightSection .circle:nth-child(2) {
+        margin: 40px 30px 0 30px!important;
+    }
+    .homePage .secondSection .rightSection .innerRightSection .circle:nth-child(3) {
+        margin: 80px 0 0 23px!important;
+    }
+    
+    .homePage .thirdSection:before {
+        width: 100%!important;
+        height: 100%!important;
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container {
+        padding: 6px 0 6px 24px !important;
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container .sectionTitle {
+        left: -17px !important;
+        top: 0 !important;
+        font-size: 21px!important;
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .description {
+        width: 75% !important;
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .description p {
+        font-size: 12px!important;
+        line-height: 16px !important;
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a {
+        height: 42px !important;
+        line-height: 44px !important;
+        font-size: 11px !important;
+        padding: 0 45px 0 54px !important;
+    } 
+    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a:nth-child(2) {
+        display: flex!important;
+        margin: 10px 0 0 0 !important;
+        width: 49% !important;
+
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder {
+        margin: 10px 0 0 0;
+       }
+       .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a {
+         margin: 0 18px 0 0;
+        }
+        .homePage .thirdSection .swiper-container .swiper-slide .container .paginationHolder .hospitalsSliderPag .swiper-pagination-bullet {
+         margin:  0 5px;
+        }
+        .homePage .thirdSection .swiper-container .swiper-slide .container .allHospitalsBtn {
+         margin:  20px 0;
+         font-size: 12px;
+        }
+        .homePage .forthSection .sliderWrapper .swiper-container {
+            padding: 0 0 0 10%!important;
+        }
+        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide,
+        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active,
+        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-next ,
+        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-prev {
+            width: 100%!important;
+        }
+        .homePage .forthSection .dotsImage {
+         right: -90px;
+        }
+        .homePage .fifthSection .leftSection .imageHolder {
+            bottom: 3rem!important;
+            left: -9rem!important;
+        }
+        .homePage .fifthSection .leftSection .imageHolder .bigCircle {
+            position: relative!important;
+            top: 11rem!important;
+            right: 10rem!important;
+        }
+        .homePage .fifthSection .leftSection .imageHolder a.goToBtn {
+            top: 24rem!important;
+            right: 15rem!important;
+        }
+        .homePage .fifthSection .leftSection .imageHolder .bigCircle {
+            position: relative!important;
+            bottom: -40px!important;
+            left: -19px!important;
+        }
+        .homePage .fifthSection .rightSection .listWrapper {
+            position: relative!important;
+            right: 38rem!important;
+            top: 21rem!important;
+        }
+        .homePage .fifthSection .rightSection .listWrapper .eachListWrap .descriptionWrap {
+            padding: 0 0 0 15px!important;
+        }
+        .homePage .fifthSection  .rightSection { 
+         padding: 10px 0 0 0!important;
+         position: relative!important;
+         left: -33rem!important;
+         top: 17rem!important;
+        }
+        .homePage .fifthSection .row .rightSection .listWrapper .eachListWrap {
+            padding: 15px 30px 10px!important;
+            margin: 0 24px 0 0!important;
+        }
+        .blood-donation__section2 {
+            position: relative!important;
+            top: 10rem!important;
+        }
+
+        .blood-donation__section2 .blood-donation__section2--title h2 {
+            bottom: 7rem!important;
+        }
+        .blood-donation__section2 .blood-donation__section2--title h2:after {
+            bottom: -15px!important;
+        }
+        .blood-donation__section2--image {
+            left: -19px!important;
+            top: 4rem!important;
+        }
+        .blood-donation__section2--numbers {
+            position: relative!important;
+            top: 1rem!important;
+        }
+        .sixthSection {
+            margin: 8rem 0 0 0!important;
+        }
+        .moreInfoSection h2:after {
+            left: 43px!important;
+        }
+        #sec_8 .cont-title {
+            margin: -5rem 0 0 1rem!important;
+        }
+    
+    footer{
+        padding: 56px 0 0 0!important;
+        height: 38rem!important;
+    }
+    
+     footer .backPart .topPart {
+        padding: 34px 0 22px 14px!important;
+        top: 1rem!important;
+        height: 399px!important;
+     }
+     footer .backPart .topPart .column {
+        position: relative!important;
+        top: 4rem!important;
+     }
+    
+     footer .backPart .bottomPart {
+        position: relative!important;
+        bottom: 1rem!important;
+    }
+     footer .backPart .bottomPart ul {
+         display: ruby-text!important;
+     }
+     footer .frontPart {
+        bottom: 37rem!important;
+         height: 7rem!important;
+     }
+     footer .frontPart .innerFrontPart {
+         top: 0rem!important;
+         right: 5rem!important;
+         position: relative!important;
+     }
+     footer .frontPart .innerFrontPart h2 {
+         font-size: 13px!important;
+         display: flex!important;
+         justify-content: left!important;
+         margin: 0 0 12px 0!important;
+     }
+     footer .frontPart .innerFrontPart form {
+         bottom: 1rem!important;
+         width: 80%!important;
+     }
+     footer .frontPart .socialMediaHolder {
+         right: 8rem!important;
+     }
+     footer .frontPart .socialMediaHolder li a {
+        font-size: 14px!important;
+     }
+     footer .frontPart h4 {
+        bottom: 7px!important;
+        left: 13px!important;
+        font-size: 10px!important;
+     }
+}
+/*Per Tablet*/
+
+@media(max-width: 768px) {
+
+      
+        .paddingTop {
+            padding-top: 66px;
+        }
+        .topHeader {
+            top: 7px;
+            left: -42rem;
+            padding: 18px 0
+        }
+        .topHeader .rightSection {
+            position: relative;
+            left: 54rem;
+            top: -3rem;
+        }
+        .topHeader .rightSection a.languageSwitcher {
+            margin: 3px 10px 0 0 ;
+            width: 94px;
+            height: 35px;
+            line-height: 31px;
+            font-size: 17px;
+            position: relative;
+            left: 45px;
+        }
+        .topHeader .rightSection a.whatsapp.desktop {
+           width: 11rem;
+           height: 3rem;
+           position: relative;
+           top: 3px;
+           right: -64px;
+    
+        }
+        .topHeader .rightSection a.whatsapp.desktop span {
+            display: flex;
+            font-size: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        .topHeader .rightSection a.menuOpenerHolder {
+            margin: 0 0 0 10px;
+        }
+        .topHeader .menuOpenerHolder {
+            position: relative;
+            top: -6rem;
+            right: -39rem;
+            margin: 0 0 0 25px;
+            cursor: pointer;
+        }
+        .fullMenuWrapper {
+            position: fixed;
+            top: 0;
+            height: 100%;
+            width: 56%;
+            transition: right 0.5s ease;
+        }
+        .fullMenuWrapper.openMe {
+            right: 21rem;
+            opacity: 1;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fullMenuWrapper .languageSwitcher {
+            top: -22rem;
+            right: -11rem;
+            position: relative;
+    
+        }
+        .fullMenuWrapper .languageSwitcher .l1 {
+            position: absolute;
+            top: 93px;
+            right: 46px;
+            width: 88px;
+            height: 36px;;
+            border-radius: 100%;
+            border: 1px solid rgba(255,255,255, .32);
+            text-align: center;
+            line-height: 35px;
+            font-size: 15px;
+            color: #fff;
+    
+        }
+        .fullMenuWrapper .languageSwitcher .l2 {
+            position: absolute;
+            top: 93px;
+            right: 110px;
+            width: 88px;
+            height: 36px;;
+            border-radius: 100%;
+            border: 1px solid rgba(255,255,255, .32);
+            text-align: center;
+            line-height: 35px;
+            font-size: 15px;
+            color: #fff;
+            
+        }
+        .fullMenuWrapper .middleMenuHolder ul li a {
+            font-size: 10px;
+            padding: 0 0 13px 0;
+            color: #fff;
+            display: inline-block;
+            position: relative;
+            transition: transform 0.5s ease;
+        }
+        .fullMenuWrapper .middleMenuHolder ul li a:hover {
+           transform: scale(2);
+            color: var(--blue_col)
+        }
+        .fullMenuWrapper .socialMediaHolder {
+            bottom: 30px;
+        }
+        .fullMenuWrapper .socialMediaHolder li {
+            margin: 0 6px;
+            padding: 0 10px;
+        }
+        .homePage .firstSection {
+            height: 450px;
+        }
+        .homePage .firstSection .innerSection h1 {
+            font-size: 26px;
+        }
+        .homePage .firstSection .innerSection h4 {
+            font-size: 13px;
+        }
+      
+        .homePage .firstSection .bottomSection .container .bottomColumn {
+       
+            max-height: 65px;
+            padding: 0 15px;
+        }
+        .homePage .firstSection .bottomSection .container .bottomColumn img {
+           max-width: 34px;
+           height: 34px;
+        }
+        .homePage .firstSection .bottomSection .container .bottomColumn .content {
+           line-height: 16px;
+        }
+        .homePage .firstSection .bottomSection .container .bottomColumn h3 {
+           font-size: 13px;
+           margin: 0 0 4px 0
+         }
+         .homePage .firstSection .bottomSection .container .bottomColumn a {
+            font-size: 12px;
+            padding: 9px 12px 10px 12px;
+            margin:  8px 0 0 0;
+          }
+          .homePage .secondSection {
+            padding: 30px 0 35px 0;
+            background-size: 800px;
+          }
+          .homePage .secondSection .leftSection h2 {
+            font-size: 26px;
+            line-height: 32px;
+          }
+          .homePage .secondSection .leftSection p {
+            font-size: 13px;
+          }
+          .homePage .secondSection .rightSection .innerRightSection .circle {
+            margin-right: 10px;
+            width: 134px;
+            height: 134px;
+            position: relative;
+            cursor: pointer;
+            animation: pulse 2s infinite;
+            display: flex;
+            flex-direction: row;
+    
+          }
+          .homePage .secondSection .rightSection .innerRightSection .circle .innerCircle {
+            width: 8rem;
+           height: 8rem;
+           margin-right: -3rem;
+          }
+          .homePage .secondSection .rightSection .innerRightSection .circle:after {
+            display: none;
+          }
+          .blood-donation__section2 .blood-donation__section2--title h2 {
+            display: inline-block;
+            font-size: 28px;
+            position: relative;
+            height: 45px;
+            cursor: pointer;
+            padding-bottom: 40px;
+          }
+          .blood-donation__section2--image {
+            margin: auto;
+            position: relative;
+            left: 73px;
+            max-width: 401px;
+          }
+    
+          .homePage .thirdSection {
+            padding: 35px 0 10px 0
+          }
+          .homePage .thirdSection:before {
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+          }
+          .homePage .thirdSection .swiper-container .swiper-slide .container .sectionTile {
+             margin: 0 0 20px 0;
+             font-size: 26px;
+          }
+          .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection h2  {
+            margin: 0 0 6px 0;
+            font-size: 18px;
+            min-height: 100%;
+            text-transform: uppercase;
+            line-height: 28px;
+         }
+         .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .imageHolder  {
+            margin: 0 0 20px 0;
+         }
+         .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .numberAndSocialMedia {
+            margin: 0 0 5px 0;
+         }
+         .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .description  {
+           line-height: 19px;
+           max-width: 100%;
+         }
+         .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder {
+           margin: 10px 0 0 0;
+          }
+          .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a {
+            margin: 0 18px 0 0;
+           }
+           .homePage .thirdSection .swiper-container .swiper-slide .container .paginationHolder .hospitalsSliderPag .swiper-pagination-bullet {
+            margin:  0 5px;
+           }
+           .homePage .thirdSection .swiper-container .swiper-slide .container .allHospitalsBtn {
+            margin:  20px 0;
+            font-size: 12px;
+           }
+           .homePage .forthSection {
+            padding: 50px 0 50px 0;
+           }
+           .homePage .forthSection .sliderWrapper .sectionTitle {
+            font-size: 28px;
+            left: 2rem
+           }
+           .homePage .forthSection .dotsImage {
+            right: -90px;
+           }
+           .homePage .fifthSection {
+            padding: 25px 0 10px 0
+           }
+           .homePage .fifthSection .sectionIdentifier h2 {
+            font-size: 28px;
+            top: -4rem
+           }
+           .homePage .fifthSection .row .leftSection .imageHolder  a.goToBtn {
+            font-size: 13px;
+           }
+           .homePage .fifthSection .row .leftSection .imageHolder  .bigCircle {
+            width: 322px;
+            height: 322px;
+           }
+           .homePage .fifthSection .row .rightSection { 
+            padding: 10px 0 0 0;
+           }
+           .homePage .fifthSection .row .rightSection { 
+           padding: 15px 15px ;
+           border-radius: 20px;
+           max-width: 100%;
+           }
+         
+    
+           .homePage .fifthSection .row .rightSection .listWrapper .eachListWrap { 
+            padding: 15px 10px;
+            margin: 0 24px 0 0 ;
+           }
+           .homePage .fifthSection .row .rightSection .listWrapper .eachListWrap:hover {
+            background-color: #A3ABB7;
+            color: var(--blue_col); 
+           }
+           .homePage .fifthSection .row .rightSection .listWrapper .eachListWrap .iconWrap { 
+            border-radius: 13px;
+            width: 50px;
+            height: 52px;
+            flex: 0 0 50px;
+           }
+           .homePage .fifthSection .row .rightSection .listWrapper .eachListWrap .iconWrap img { 
+            max-width: 26px
+           }
+           .homePage .fifthSection .row .rightSection .shapeImage { 
+            display: none;
+        }
+        .moreInfoSection h2 {
+            font-size: 30px;
+        }
+        .moreInfoSection h3 {
+            font-size: 13px;
+        }
+        .moreInfoSection .buttonsHolder {
+            display: flex;
+            justify-content: center;
+        }
+        .moreInfoSection .buttonsHolder a {
+            min-width: 122px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+        #sec_8 .cont-title {
+            display: flex;
+            justify-content: center;
+            margin: 0 0 0 1rem;
+        }
+        #sec_8 .cont-title h2 {
+            display: inline-block;
+            font-size: 33px;
+            cursor: pointer;
+            padding: 0 0 1rem 0;
+            margin: 0;
+            poistion: relative;
+        }
+        footer {
+            padding: 135px 0 0 0;
+            height: 36rem;
+        }
+       
+        footer .backPart {
+            background-color: var(--indigo_sections_col);
+            width: 100%;
+            padding: 0 0 0 0;
+        }
+        footer .backPart .topPart {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px 0 50px 14px;
+        }
+        footer .backPart .topPart .column {
+            padding: 0 12px 0 12px;
+            margin: 0 0 16px 0;
+        }
+       
+        footer .backPart .bottomPart {
+            padding: 0 0 0 10px;
+        }
+        footer .backPart .bottomPart ul {
+            margin-bottom: 20px;
+            float: none;
+        }
+        footer .backPart .bottomPart ul.socialMediaHolder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer .frontPart {
+            background-color: #3d3c62;
+            width: 36rem;
+            height: 9rem;
+            position: relative;
+            bottom: 34rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            right: 0rem;
+            padding: 0 0 0 0;
+        }
+        footer .frontPart .innerFrontPart {
+            top: -1rem;
+            right: 2rem;
+            position: relative;
+        }
+        footer .frontPart .innerFrontPart h2 {
+            color: #fff;
+            font-size: 16px;
+            margin: 0 0 12px 0;
+        }
+        footer .frontPart h4 {
+            position: absolute;
+            bottom: 0rem;
+            left: 1rem;
+            color: rgba(255,255,255, .57);
+            font-size: 11px;
+            margin: 6px 0;
+        }
+        footer .frontPart .socialMediaHolder {
+            position: absolute;
+            bottom: 10px;
+            right: 7rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+}

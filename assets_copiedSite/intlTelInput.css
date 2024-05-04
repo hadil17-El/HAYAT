@@ -1,0 +1,58 @@
+@font-face {
+    font-display: swap;
+    font-family: 'lato-regular';
+    src: url(assets_copiedSite/fonts/Lato-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'lato-semiblod';
+    src: url(assets_copiedSite/fonts/Lato-Semiblod.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-display: swap;
+    font-family: 'lato-semiblod';
+    src: url(assets_copiedSite/fonts/Lato-Semiblod.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-display: swap;
+    font-family: 'lato-semiblod';
+    src: url(assets_copiedSite/fonts/Lato-Blod.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'lato-black';
+    src: url(assets_copiedSite/fonts/Lato-Black.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'lato-light';
+    src: url(assets_copiedSite/fonts/Lato-Light.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'lato-italic';
+    src: url(assets_copiedSite/fonts/Lato-Italic.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+body,
+html {
+    margin: 0;
+}
