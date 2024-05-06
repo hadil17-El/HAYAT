@@ -59,7 +59,9 @@ html {
 body.page {
     line-height: 1
 }
-
+a {
+    text-decoration: none;
+}
 :root {
     --blue_col: #a53d79;
     --indigo_sections_col: #1d051c;
@@ -280,7 +282,7 @@ a:active {
 .topHeader .rightSection {
     display: inline-block;
     position: relative;
-    left: 49rem;
+    left: 30rem;
 }
 
 .topHeader .rightSection a {
@@ -324,7 +326,7 @@ a:active {
 .topHeader  .menuOpenerHolder {
     position: relative;
     top: -62px;
-    right: -71rem;
+    right: 2em;
     margin: 0 0 0 25px;
     cursor: pointer
 }
@@ -401,13 +403,13 @@ body.home .topHeader {
     z-index: -1;
     top: 0;
     height: 100%;
-    width: 25%;
+    width: 30%;
     border-bottom: 8px solid var(--blue_col);
     transition: right 0.5s ease;
 }
 
 .fullMenuWrapper.openMe {
-    right: 0;
+    right: 42rem;
     opacity: 1;
     visibility: visible;
     z-index: 9999;
@@ -913,7 +915,8 @@ body.home .topHeader {
 
 .homePage .secondSection .rightSection .innerRightSection {
     display: flex;
-    justify-content: flex-end
+    position: relative;
+    right: 20rem;
 }
 
 @keyframes pulse {
@@ -988,14 +991,7 @@ body.home .topHeader {
 .homePage .secondSection .rightSection .innerRightSection .circle:nth-child(3) {
     margin: 80px 0 0 0
 }
-/*
-.homePage .secondSection .rightSection .innerRightSection .circle.animated:after {
-    width: 176px;
-    height: 192px;
-    border-radius: 150px;
-    transition: all 0.5s ease;
-}
-*/
+
 
 
 .homePage .thirdSection {
@@ -1116,6 +1112,8 @@ body.home .topHeader {
     color: #fff;
     padding: 0 47px 0 55px;
     cursor: pointer;
+    justify-content: center;
+    
 }
 .homePage .thirdSection .swiper-container .swiper-slide .container  .leftSection .innerLeftSection  .buttonsHolder a:hover {
     background-color: var(--blue_col);
@@ -1256,15 +1254,19 @@ body.home .topHeader {
     height: 4px;
     width: 100%;
     border-radius: 3px;
-    background-color: #f6f7fA
+    background-color: #f6f7fA;
+    right: 5rem;
 }
 .homePage .forthSection .sliderWrapper .navAndPag .articlesSliderPag .swiper-pagination-progressbar-fill {
     border-radius: 3px;
     background-color: var(--blue_col);
 }
 .homePage .forthSection .sliderWrapper .navAndPag .navigationWrapper {
+    right: 70rem;
+    position: relative;
     display: flex;
     margin: 0 0 0 10px;
+    right: 5rem;
 }
 .homePage .forthSection .sliderWrapper .navAndPag .navigationWrapper .articlesSliderNav {
    color: var(--blue_col);
@@ -1322,8 +1324,8 @@ body.home .topHeader {
     position: relative;
     width: 382px;
     height: 382px;
-    bottom: -40px;
-    left: -50px;
+    top: 12rem;
+    right: 13rem;
 }
 .homePage .fifthSection .leftSection .imageHolder a.goToBtn {
     background-color: #fff;
@@ -1335,11 +1337,15 @@ body.home .topHeader {
     border-radius: 25px;
     padding: 11px 0 13px 0;
     position: absolute;
-    bottom: 25px;
-    left: 40px;
+    bottom: 60px;
+    display: flex;
+    right: 11rem;
+    width: 10rem;
+    align-items: center;
     z-index: 15;
-    width: 165px;
-    height: 39px;
+    width: 15rem;
+    justify-content: center;
+    height: 1rem;
 }
 .homePage .fifthSection .leftSection .imageHolder a.goToBtn:hover {
     color: #fff;
@@ -1348,8 +1354,9 @@ body.home .topHeader {
 }
 
 .homePage .fifthSection .rightSection {
+    top: -2rem;
     position: relative;
-    left: 6rem
+    left: -6rem;
 }
 .homePage .fifthSection .rightSection .listWrapper {
     width: 100%;
@@ -1366,6 +1373,13 @@ body.home .topHeader {
     border-radius: 11px;
     padding: 15px 15px;
 }
+.homePage .fifthSection .row .rightSection .listWrapper .eachListWrap .iconWrap {
+    border-radius: 13px;
+    width: 50px;
+    height: 52px;
+    flex: 0 0 50px
+}
+
 .homePage .fifthSection .rightSection .listWrapper .eachListWrap .descriptionWrap h3 {
     color: var(--blue_col);
 
@@ -1423,7 +1437,8 @@ body.home .topHeader {
     position: relative;
     height: 45px;
     cursor: pointer;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
+    bottom: 15rem;
 }
 .blood-donation__section2 .blood-donation__section2--title h2:after {
     content: "";
@@ -1443,15 +1458,22 @@ body.home .topHeader {
 .blood-donation__section2--image {
     margin: auto;
     position: relative;
-    left: 73px;
+    bottom: 55rem;
+    left: 8rem;
     max-width: 712px;
 }
 .blood-donation__section2 .num-left {
+    top: 7rem;
+    position: relative;
     float: left;
 }
 
 .blood-donation__section2 .num-right {
     float: right;
+    position: relative;
+    left: -3rem;
+    /* bottom: -2rem; */
+    top: 16rem;
 }
 .blood-donation__section2--numbers {
     margin: 0;
@@ -1492,7 +1514,8 @@ body.home .topHeader {
     color: var(--blue_col);
 }
 
-.moreInfoSection {
+.moreInfoSection {position: relative;
+    bottom: 12rem;
     text-align: center;
     margin: 40px 0 0 0;
 }
@@ -1576,35 +1599,16 @@ footer .backPart {
     background-color: var(--indigo_sections_col);
     width: 100%;
     border-radius: 3%;
-    padding: 0 0 0 45px
+    padding: 0 0 0 25px
 }
 
 footer .backPart .topPart {
     display: flex;
     padding: 30px 0 50px 0
 }
-
-footer .backPart .topPart .column:nth-child(1) {
-    flex: 0 0 13%
-}
-
-footer .backPart .topPart .column:nth-child(2) {
-    flex: 0 0 15%
-}
-
-footer .backPart .topPart .column:nth-child(3) {
-    flex: 0 0 18%;
-}
-
-footer .backPart .topPart .column:nth-child(4) {
-    flex: 0 0 15%
-}
-footer .backPart .topPart .column:nth-child(4) ul {
-    margin: 0 0 15px 0
-}
-
-footer .backPart .topPart .column:nth-child(5) {
-    flex: 0 0 15%
+footer .backPart .topPart .column {
+    margin-right: 3rem;
+    flex: 0 0 7%;
 }
 
 footer .backPart .topPart .column .columnTitle {
@@ -1615,6 +1619,7 @@ footer .backPart .topPart .column .columnTitle {
     font-family: "lato-black", "thesans-bold", sans-serif;
     position: relative;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 footer .backPart .topPart .column .columnTitle a {
@@ -1628,8 +1633,13 @@ footer .backPart .topPart .column .columnTitle:after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0
+    left: 0;
+    transition: width 0.5s ease;
 }
+footer .backPart .topPart .column .columnTitle:hover::after {
+width: 100%;
+}
+
 
 footer .backPart .topPart .column .columnTitle.customerCareLink a {
     line-height: 15px
@@ -1659,20 +1669,21 @@ footer .backPart .topPart .column ul li a:hover {
 }
 
 footer .backPart .bottomPart {
-    padding: 15px 240px 15px 0;
+    padding: 15px 0 15px 0;
     border-top: 1px solid rgba(255, 255, 255, .14)
 }
 
 footer .backPart .bottomPart ul {
-    float: left;
     list-style: none;
     padding: 0;
-    margin: 0
+    margin: 0;
+    bottom: 1rem;
+    position: relative;
 }
 
 footer .backPart .bottomPart ul li {
     display: inline-block;
-    padding: 0 18px 0 0;
+    padding: 0 8px 0 0;
     margin: 0 15px 0 0;
     position: relative;
     vertical-align: text-bottom;
@@ -1704,16 +1715,22 @@ footer .backPart .bottomPart ul li a:hover {
 }
 
 footer .backPart .bottomPart ul.socialMediaHolder {
-    display: none
+        position: relative;
+        left: 16rem;
+        bottom: 1px;
+}
+footer .backPart .bottomPart ul li a i {
+    font-size: 1rem;
 }
 
 footer .frontPart {
     background-color: #3d3c62;
-    width: 490px;
-    height: 430px;
+    width: 436px;
+    height: 429px;
     position: absolute;
-    bottom: -85px;
-    right: -40px;
+    bottom: -1rem;
+    /* top: 0rem; */
+    right: -37px;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
     border-bottom-left-radius: 87%;
@@ -1721,7 +1738,7 @@ footer .frontPart {
     display: flex;
     align-items: center;
     padding: 0 0 0 50px;
-    justify-content: flex-start
+    justify-content: flex-start;
 }
 
 footer .frontPart .innerFrontPart {
@@ -1750,7 +1767,6 @@ footer .frontPart .innerFrontPart form input.email {
     color: #fff;
     font-size: 14px;
     border-radius: 25px;
-    padding: 0 134px 0 15px;
     background-color: transparent;
     cursor: pointer;
 }
@@ -2739,14 +2755,16 @@ footer .frontPart .socialMediaHolder li a:hover {
             font-size: 17px;
             position: relative;
             left: 45px;
+            top: 1rem;
         }
         .topHeader .rightSection a.whatsapp.desktop {
-           width: 11rem;
-           height: 3rem;
-           position: relative;
-           top: 3px;
-           right: -64px;
-    
+            align-items: center;
+            display: flex;
+            width: 11rem;
+            height: 2rem;
+            position: relative;
+            left: 17rem;
+            bottom: 2rem;
         }
         .topHeader .rightSection a.whatsapp.desktop span {
             display: flex;
@@ -2759,7 +2777,7 @@ footer .frontPart .socialMediaHolder li a:hover {
         }
         .topHeader .menuOpenerHolder {
             position: relative;
-            top: -6rem;
+            top: -8rem;
             right: -39rem;
             margin: 0 0 0 25px;
             cursor: pointer;
@@ -2814,7 +2832,7 @@ footer .frontPart .socialMediaHolder li a:hover {
             
         }
         .fullMenuWrapper .middleMenuHolder ul li a {
-            font-size: 10px;
+            font-size: 15px;
             padding: 0 0 13px 0;
             color: #fff;
             display: inline-block;
@@ -2867,29 +2885,39 @@ footer .frontPart .socialMediaHolder li a:hover {
             padding: 30px 0 35px 0;
             background-size: 800px;
           }
+          .homePage .secondSection .container {
+            padding: 0px 8rem 0px 2rem!important;
+        }
           .homePage .secondSection .leftSection h2 {
             font-size: 26px;
             line-height: 32px;
           }
           .homePage .secondSection .leftSection p {
-            font-size: 13px;
-          }
+            font-size: 13px!important;
+            max-width: 347px!important;
+            }
+                 
+            .homePage .secondSection .rightSection {
+            position: relative!important;
+            flex: 1!important;
+            text-align: right!important;
+            right: 14rem!important;
+            bottom: 3rem!important;
+        }
           .homePage .secondSection .rightSection .innerRightSection .circle {
-            margin-right: 10px;
-            width: 134px;
-            height: 134px;
-            position: relative;
-            cursor: pointer;
-            animation: pulse 2s infinite;
-            display: flex;
-            flex-direction: row;
+            margin-right: 38px!important;
+            width: 3rem!important;
+            height: 3rem!important;
+            position: relative!important;
     
           }
           .homePage .secondSection .rightSection .innerRightSection .circle .innerCircle {
-            width: 8rem;
-           height: 8rem;
-           margin-right: -3rem;
+            width: 7rem!important;
+           height: 7rem!important;
           }
+          .homePage .secondSection .rightSection .innerRightSection .circle:nth-child(2) {
+            margin: 40px 68px 0 37px!important;
+        }
           .homePage .secondSection .rightSection .innerRightSection .circle:after {
             display: none;
           }
@@ -2901,12 +2929,7 @@ footer .frontPart .socialMediaHolder li a:hover {
             cursor: pointer;
             padding-bottom: 40px;
           }
-          .blood-donation__section2--image {
-            margin: auto;
-            position: relative;
-            left: 73px;
-            max-width: 401px;
-          }
+     
     
           .homePage .thirdSection {
             padding: 35px 0 10px 0
@@ -2959,28 +2982,35 @@ footer .frontPart .socialMediaHolder li a:hover {
            .homePage .forthSection .dotsImage {
             right: -90px;
            }
+           .homePage .forthSection .sliderWrapper .navAndPag .articlesSliderPag {
+            position: relative!important;
+            right: 4rem!important;
+        }
+        .homePage .forthSection .sliderWrapper .navAndPag .navigationWrapper {
+            right: 4rem!important;
+            position: relative!important;
+        }
            .homePage .fifthSection {
             padding: 25px 0 10px 0
            }
            .homePage .fifthSection .sectionIdentifier h2 {
-            font-size: 28px;
-            top: -4rem
-           }
-           .homePage .fifthSection .row .leftSection .imageHolder  a.goToBtn {
-            font-size: 13px;
-           }
+            font-size: 28px!important;
+            top: -8rem!important;
+        }
            .homePage .fifthSection .row .leftSection .imageHolder  .bigCircle {
-            width: 322px;
-            height: 322px;
+            width: 322px!important;
+            height: 322px!important;
+            bottom: -81px !important;
+            right: 13rem!important;
            }
            .homePage .fifthSection .row .rightSection { 
             padding: 10px 0 0 0;
            }
-           .homePage .fifthSection .row .rightSection { 
-           padding: 15px 15px ;
-           border-radius: 20px;
-           max-width: 100%;
-           }
+           .homePage .fifthSection .rightSection {
+            top: -5rem !important;
+            position: relative !important;
+            right: 9rem !important;
+        }
          
     
            .homePage .fifthSection .row .rightSection .listWrapper .eachListWrap { 
@@ -3000,8 +3030,26 @@ footer .frontPart .socialMediaHolder li a:hover {
            .homePage .fifthSection .row .rightSection .listWrapper .eachListWrap .iconWrap img { 
             max-width: 26px
            }
-           .homePage .fifthSection .row .rightSection .shapeImage { 
-            display: none;
+           .blood-donation__section2 .blood-donation__section2--title h2 {
+            font-size: 31px!important;
+            padding-bottom: 2px!important;
+           }
+           .blood-donation__section2--image {
+            bottom: 15rem!important;
+            margin: auto!important;
+            right: 7rem!important;
+            max-width: 30rem!important;
+        }
+        .blood-donation__section2 .num-right {
+            float: right!important;
+            position: relative!important;
+            bottom: 10rem!important;
+            right: 5rem!important;
+        }
+        
+        .moreInfoSection {
+            bottom: 0rem!important;
+            position: relative!important;
         }
         .moreInfoSection h2 {
             font-size: 30px;
@@ -3030,11 +3078,11 @@ footer .frontPart .socialMediaHolder li a:hover {
             cursor: pointer;
             padding: 0 0 1rem 0;
             margin: 0;
-            poistion: relative;
+            position: relative;
         }
         footer {
             padding: 135px 0 0 0;
-            height: 36rem;
+            height: 22rem;
         }
        
         footer .backPart {
@@ -3058,29 +3106,28 @@ footer .frontPart .socialMediaHolder li a:hover {
         footer .backPart .bottomPart ul {
             margin-bottom: 20px;
             float: none;
+            position: relative!important;
+            top: 0rem!important;
         }
-        footer .backPart .bottomPart ul.socialMediaHolder {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+     
         footer .frontPart {
             background-color: #3d3c62;
-            width: 36rem;
-            height: 9rem;
-            position: relative;
-            bottom: 34rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 6px;
-            right: 0rem;
-            padding: 0 0 0 0;
+            width: 26rem!important;
+            height: 15rem!important;
+            position: relative!important;
+            bottom: 358px!important;
+            left: 367px!important;
+            display: flex!important;
+            align-items: center!important;
+            justify-content: center!important;
+            border-radius: 10px!important;
+            padding: 0 0 0 0!important;
+        
         }
         footer .frontPart .innerFrontPart {
-            top: -1rem;
-            right: 2rem;
-            position: relative;
+            top: -1rem!important;
+            right: 1rem!important;
+            position: relative!important;
         }
         footer .frontPart .innerFrontPart h2 {
             color: #fff;
@@ -3096,11 +3143,7 @@ footer .frontPart .socialMediaHolder li a:hover {
             margin: 6px 0;
         }
         footer .frontPart .socialMediaHolder {
-            position: absolute;
-            bottom: 10px;
-            right: 7rem;
-            margin: 0;
-            padding: 0;
-            list-style: none;
+            bottom: 4rem;
+            right: 3rem;
         }
 }
