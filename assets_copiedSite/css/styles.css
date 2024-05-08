@@ -1,53 +1,3 @@
-
-@font-face {
-    font-display: swap;
-    font-family: 'lato-regular';
-    src: url(assets_copiedSite/fonts/Lato-Regular.ttf);
-    font-weight: 400;
-    font-style: normal ;
-}
-
-@font-face {
-    font-display: swap;
-    font-family: 'lato-semibold';
-    src: url(assets_copiedSite/fonts/Lato-Semibold.ttf);
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-display: swap;
-    font-family: 'lato-bold';
-    src: url(assets_copiedSite/fonts/Lato-Bold.ttf);
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-display: swap;
-    font-family: 'lato-black';
-    src: url(assets_copiedSite/fonts/Lato-Black.ttf);
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-display: swap;
-    font-family: 'lato-light';
-    src: url(assets_copiedSite/fonts/Lato-Light.ttf);
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-display: swap;
-    font-family: 'lato-italic';
-    src: url(assets_copiedSite/fonts/Lato-Italic.ttf);
-    font-weight: 400;
-    font-style: normal
-}
-
-
 body,
 html {
     margin: 0;
@@ -282,7 +232,8 @@ a:active {
 .topHeader .rightSection {
     display: inline-block;
     position: relative;
-    left: 30rem;
+    left: 50rem;
+    bottom: 1rem;
 }
 
 .topHeader .rightSection a {
@@ -405,11 +356,13 @@ body.home .topHeader {
     height: 100%;
     width: 30%;
     border-bottom: 8px solid var(--blue_col);
-    transition: right 0.5s ease;
+    transition: transform 1.5s ease,opacity 1.5s ease;
+    transform: translateX(-100%);
 }
 
 .fullMenuWrapper.openMe {
-    right: 42rem;
+    transform: translateX(0%);
+    right: 56rem;
     opacity: 1;
     visibility: visible;
     z-index: 9999;
@@ -533,7 +486,7 @@ body.home .topHeader {
 
 
 .fullMenuWrapper .closeHolder {
-    position: absolute;
+     position: absolute;
     top: 3%;
     right: 17px;
 }
@@ -916,7 +869,7 @@ body.home .topHeader {
 .homePage .secondSection .rightSection .innerRightSection {
     display: flex;
     position: relative;
-    right: 20rem;
+    right: 10rem;
 }
 
 @keyframes pulse {
@@ -1317,8 +1270,8 @@ body.home .topHeader {
     position: relative;
     display: inline-block;
     z-index: 10;
-    bottom: 10rem;
-    left: 4rem;
+    bottom: 12rem;
+    left: 10rem;
 }
 .homePage .fifthSection .leftSection .imageHolder .bigCircle {
     position: relative;
@@ -1354,9 +1307,9 @@ body.home .topHeader {
 }
 
 .homePage .fifthSection .rightSection {
-    top: -2rem;
+    top: 4rem;
     position: relative;
-    left: -6rem;
+    left: 6rem;
 }
 .homePage .fifthSection .rightSection .listWrapper {
     width: 100%;
@@ -1458,12 +1411,12 @@ body.home .topHeader {
 .blood-donation__section2--image {
     margin: auto;
     position: relative;
-    bottom: 55rem;
-    left: 8rem;
+    bottom: 17rem;
+    left: -1rem;
     max-width: 712px;
 }
 .blood-donation__section2 .num-left {
-    top: 7rem;
+    top: -4rem;
     position: relative;
     float: left;
 }
@@ -1471,9 +1424,9 @@ body.home .topHeader {
 .blood-donation__section2 .num-right {
     float: right;
     position: relative;
-    left: -3rem;
+    left: -9rem;
     /* bottom: -2rem; */
-    top: 16rem;
+    top: 9rem;
 }
 .blood-donation__section2--numbers {
     margin: 0;
@@ -1515,7 +1468,7 @@ body.home .topHeader {
 }
 
 .moreInfoSection {position: relative;
-    bottom: 12rem;
+    bottom: -2rem;
     text-align: center;
     margin: 40px 0 0 0;
 }
@@ -1820,915 +1773,9 @@ footer .frontPart .socialMediaHolder li a:hover {
     color: var(--blue_col)
 }
 /*MEDIA QUERY*/
-/*Mobile S */
-@media (max-width: 320px) {
-        body.home .topHeader {
-        top: 1px !important;
-    }
-    .topHeader .rightSection a.languageSwitcher {
-        margin: 3px 10px 0 0 !important;
-        width: 54px  !important;
-        height: 26px !important;
-        line-height: 23px  !important;
-        font-size: 10px  !important;
-        position: relative !important ;
-        left: -9rem !important;
-    }
-    .topHeader .rightSection a.whatsapp.desktop {
-        width: 5rem !important;
-        height: 2rem !important ;
-        position: relative  !important;
-        top: -1px !important;
-        left: -10rem  !important;
-        margin: 3px 7px 0;
-    }
-    .topHeader .rightSection a.whatsapp.desktop span {
-        display: flex !important;
-        font-size: 12px !important;
-        align-items: center !important ;
-        justify-content: center !important ;
-        position: relative !important ;
-        white-space: nowrap !important;
 
-    }
-    .topHeader .menuOpenerHolder {
-        position: relative !important;
-        top: -5rem !important;
-    }
-    .fullMenuWrapper.openMe {
-        right: 9rem!important;
-        opacity: 1!important;
-        z-index: 9999!important;
-        display: flex!important;
-        justify-content: center!important;
-        align-items: center!important;
-    }
-    .fullMenuWrapper .closeHolder i {
-        color: #fff !important;
-        font-size: 28px !important;
-    }
-    .fullMenuWrapper .languageSwitcher .l1 {
-        position: absolute !important;
-        top: 120px !important;
-        right: 46px !important;
-        width: 56px !important;
-        height: 24px !important;
-        border-radius: 100% !important;
-        border: 1px solid rgba(255,255,255, .32) !important;
-        text-align: center !important;
-        line-height: 23px !important;
-        font-size: 10px !important;
-        color: #fff !important;
-    }
-    .fullMenuWrapper .languageSwitcher .l2 {
-        position: absolute !important;
-        top: 120px !important;
-        right: 93px !important;
-        width: 56px !important;
-        height: 24px !important;
-        border-radius: 100% !important;
-        border: 1px solid rgba(255,255,255, .32) !important;
-        text-align: center !important;
-        line-height: 23px !important;
-        font-size: 10px !important;
-        color: #fff !important;
-    }
-    .fullMenuWrapper .middleMenuHolder ul {
-        margin: 0 0 0 28px!important;
-        padding: 0 !important;
 
-    }
-    .fullMenuWrapper .middleMenuHolder ul li a {
-        font-size: 9px !important;
-        padding: 0 0 13px 0 !important;
-        color: #fff !important;
-        display: inline-block !important;
-        position: relative !important;
-        transition: transform 0.5s ease !important; 
-    }
-    .fullMenuWrapper .socialMediaHolder li {
-        position: relative !important;
-        padding: 0 5px 0 2px !important;
-        display: inline-block !important;
-        transition: transform 0.5s ease !important;
 
-    }
-    .homePage .firstSection .innerSection {
-        position: relative !important;
-        top: -77px !important;
-
-    }
-    .homePage .firstSection .innerSection h1 {
-        font-size: 21px !important;
-    }
-    .homePage .firstSection .bottomSection {
-        overflow-x: auto!important;
-    }
-    .homePage .firstSection .bottomSection .container .bottomColumn {
-        flex: 0 0 calc(20% + 57px) !important;
-    }
-    .homePage .secondSection {
-        padding: 30px 0 35px !important;
-        height: 31rem !important;
-    }
-    .homePage .secondSection .container {
-        padding: 0 0 0 2rem !important;
-    }
-    .homePage .secondSection .leftSection p {
-        max-width: 302px !important;
-        }
-    .homePage .secondSection .rightSection {
-        position: relative!important;
-        top: 15rem !important;
-        right: 75rem !important;
-    }
-    .homePage .secondSection .rightSection .innerRightSection {
-        position: relative!important;
-        display: flex!important;
-        left: 23px!important;
-    }
-    .homePage .secondSection .rightSection .innerRightSection .circle {
-        margin-right: 27px !important ;
-        width: 37px !important;
-    }
-    .homePage .secondSection .rightSection .innerRightSection .circle:nth-child(2) {
-        margin: 40px 30px 0 30px!important;
-    }
-    .homePage .secondSection .rightSection .innerRightSection .circle:nth-child(3) {
-        margin: 80px 0 0 23px!important;
-    }
-    
-    .homePage .thirdSection:before {
-        width: 100% !important;
-        height: 100% !important;
-    }
-    .homePage .thirdSection .swiper-container .swiper-slide .container {
-        padding: 6px 0 6px 24px !important;
-    }
-    .homePage .thirdSection .swiper-container .swiper-slide .container .sectionTitle {
-        left: -17px !important;
-        top: 0 !important;
-        font-size: 21px!important;
-    }
-    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .description {
-        width: 75% !important;
-    }
-    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .description p {
-        font-size: 12px!important;
-        line-height: 16px !important;
-    }
-    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a {
-        height: 42px !important;
-        line-height: 44px !important;
-        font-size: 11px !important;
-        padding: 0 45px 0 54px !important;
-    } 
-    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a:nth-child(2) {
-        display: flex!important;
-        margin: 10px 0 0 0 !important;
-        width: 49% !important;
-
-    }
-    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder {
-        margin: 10px 0 0 0;
-       }
-       .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a {
-         margin: 0 18px 0 0;
-        }
-        .homePage .thirdSection .swiper-container .swiper-slide .container .paginationHolder .hospitalsSliderPag .swiper-pagination-bullet {
-         margin:  0 5px;
-        }
-        .homePage .thirdSection .swiper-container .swiper-slide .container .allHospitalsBtn {
-         margin:  20px 0;
-         font-size: 12px;
-        }
-        .homePage .forthSection .sliderWrapper .swiper-container {
-            padding: 0 0 0 10%!important;
-        }
-        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide,
-        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active,
-        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-next ,
-        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-prev {
-            width: 100%!important;
-        }
-        .homePage .forthSection .dotsImage {
-         right: -90px;
-        }
-        .homePage .fifthSection .leftSection .imageHolder {
-            bottom: 3rem!important;
-            left: -9rem!important;
-        }
-        .homePage .fifthSection .row .leftSection .imageHolder  .bigCircle {
-         width: 301px!important;
-         height: 301px!important;
-        }
-        .homePage .fifthSection .leftSection .imageHolder .bigCircle {
-            position: relative!important;
-            bottom: -40px!important;
-            left: -19px!important;
-        }
-        .homePage .fifthSection .rightSection .listWrapper .eachListWrap .descriptionWrap {
-            padding: 0 0 0 15px!important;
-        }
-        .homePage .fifthSection  .rightSection { 
-         padding: 10px 0 0 0!important;
-         position: relative!important;
-         left: -33rem!important;
-         top: 17rem!important;
-        }
-        .homePage .fifthSection .row .rightSection .listWrapper .eachListWrap {
-            padding: 15px 30px 10px!important;
-            margin: 0 24px 0 0!important;
-        }
-        .blood-donation__section2 {
-            position: relative!important;
-            top: 17rem!important;
-        }
-        .blood-donation__section2 .blood-donation__section2--title h2 {
-            bottom: 7rem!important;
-        }
-        .blood-donation__section2 .blood-donation__section2--title h2:after {
-            bottom: -35px!important;
-        }
-        .blood-donation__section2--image {
-            left: -37px!important;
-            max-width: 336px!important;
-        }
-        .sixthSection {
-            margin: 8rem 0 0 0!important;
-        }
-        .moreInfoSection h2:after {
-            left: 43px!important;
-        }
-        #sec_8 .cont-title {
-            margin: -5rem 0 0 1rem!important;
-        }
-    
-    footer{
-        padding: 56px 0 0 0!important;
-        height: 38rem!important;
-    }
-    
-     footer .backPart .topPart {
-        height: 399px!important;
-     }
-     footer .backPart .topPart .column {
-        position: relative!important;
-        top: 4rem!important;
-     }
-    
-     footer .backPart .bottomPart {
-        position: relative!important;
-        top: 2rem!important;
-    }
-     footer .backPart .bottomPart ul {
-         display: ruby-text!important;
-     }
-     footer .frontPart {
-         height: 7rem!important;
-     }
-     footer .frontPart .innerFrontPart {
-         top: 0rem!important;
-         right: 6rem!important;
-         position: relative!important;
-     }
-     footer .frontPart .innerFrontPart h2 {
-         font-size: 13px!important;
-         display: flex!important;
-         justify-content: left!important;
-         margin: 0 0 12px 0!important;
-     }
-     footer .frontPart .innerFrontPart form {
-         bottom: 1rem!important;
-         width: 80%!important;
-     }
-     footer .frontPart .socialMediaHolder {
-         right: 17rem!important;
-     }
-     footer .frontPart .socialMediaHolder li a {
-        font-size: 14px!important;
-     }
-     footer .frontPart h4 {
-        bottom: 7px!important;
-        left: 13px!important;
-        font-size: 10px!important;
-     }
- 
-}
-
-/*Mobile M */
-@media(max-width: 375px){
-    body.home .topHeader {
-        top: 1px !important;
-    }
-    .topHeader .rightSection a.languageSwitcher {
-        margin: 3px 10px 0 0 !important;
-        width: 54px  !important;
-        height: 26px !important;
-        line-height: 23px  !important;
-        font-size: 10px  !important;
-        position: relative !important ;
-        left: -9rem !important;
-    }
-    .topHeader .rightSection a.whatsapp.desktop {
-        width: 5rem !important;
-        height: 2rem !important ;
-        position: relative  !important;
-        top: -1px !important;
-        left: -10rem  !important;
-        margin: 3px 7px 0;
-    }
-    .topHeader .rightSection a.whatsapp.desktop span {
-        display: flex !important;
-        font-size: 12px !important;
-        align-items: center !important ;
-        justify-content: center !important ;
-        position: relative !important ;
-        white-space: nowrap !important;
-
-    }
-    .topHeader .menuOpenerHolder {
-        position: relative !important;
-        top: -5rem !important;
-    }
-    .fullMenuWrapper {
-        width: 70%!important;
-        }
-    .fullMenuWrapper.openMe {
-        right: 8rem!important;
-        opacity: 1!important;
-        z-index: 9999!important;
-        display: flex!important;
-        justify-content: center!important;
-        align-items: center!important;
-    }
-    .fullMenuWrapper .closeHolder i {
-        color: #fff !important;
-        font-size: 28px !important;
-    }
-    .fullMenuWrapper .languageSwitcher .l1 {
-        position: absolute !important;
-        top: 120px !important;
-        right: 46px !important;
-        width: 56px !important;
-        height: 24px !important;
-        border-radius: 100% !important;
-        border: 1px solid rgba(255,255,255, .32) !important;
-        text-align: center !important;
-        line-height: 23px !important;
-        font-size: 10px !important;
-        color: #fff !important;
-    }
-    .fullMenuWrapper .languageSwitcher .l2 {
-        position: absolute !important;
-        top: 120px !important;
-        right: 93px !important;
-        width: 56px !important;
-        height: 24px !important;
-        border-radius: 100% !important;
-        border: 1px solid rgba(255,255,255, .32) !important;
-        text-align: center !important;
-        line-height: 23px !important;
-        font-size: 10px !important;
-        color: #fff !important;
-    }
-    .fullMenuWrapper .middleMenuHolder ul {
-        margin: 0 0 0 20px!important;
-        padding: 0 !important;
-
-    }
-    .fullMenuWrapper .middleMenuHolder ul li a {
-        font-size: 10px !important;
-        padding: 0 0 13px 0 !important;
-        color: #fff !important;
-        display: inline-block !important;
-        position: relative !important;
-        transition: transform 0.5s ease !important; 
-    }
-    .fullMenuWrapper .socialMediaHolder {
-        left: 24px!important;
-    }
-    .fullMenuWrapper .socialMediaHolder li {
-        position: relative !important;
-        padding: 0 5px 0 2px !important;
-        display: inline-block !important;
-        transition: transform 0.5s ease !important;
-
-    }
-    .homePage .firstSection .innerSection {
-        position: relative !important;
-        top: -77px !important;
-
-    }
-    .homePage .firstSection .innerSection h1 {
-        font-size: 21px !important;
-    }
- 
-    .homePage .firstSection .bottomSection .container .bottomColumn {
-        flex: 0 0 calc(20% + 57px) !important;
-    }
-    .homePage .secondSection {
-        padding: 30px 0 35px !important;
-        height: 31rem !important;
-    }
-    .homePage .secondSection .container {
-        padding: 0 0 0 2rem !important;
-    }
-    .homePage .secondSection .leftSection p {
-        max-width: 302px !important;
-        }
-    .homePage .secondSection .rightSection {
-        position: relative!important;
-        top: 15rem !important;
-        right: 75rem !important;
-    }
-    .homePage .secondSection .rightSection .innerRightSection {
-        position: relative!important;
-        display: flex!important;
-        left: 23px!important;
-    }
-    .homePage .secondSection .rightSection .innerRightSection .circle {
-        margin-right: 27px !important ;
-        width: 37px !important;
-    }
-    .homePage .secondSection .rightSection .innerRightSection .circle:nth-child(2) {
-        margin: 40px 30px 0 30px!important;
-    }
-    .homePage .secondSection .rightSection .innerRightSection .circle:nth-child(3) {
-        margin: 80px 0 0 23px!important;
-    }
-    
-    .homePage .thirdSection:before {
-        width: 100% !important;
-        height: 100% !important;
-    }
-    .homePage .thirdSection .swiper-container .swiper-slide .container {
-        padding: 6px 0 6px 24px !important;
-    }
-    .homePage .thirdSection .swiper-container .swiper-slide .container .sectionTitle {
-        left: -17px !important;
-        top: 0 !important;
-        font-size: 21px!important;
-    }
-    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .description {
-        width: 75% !important;
-    }
-    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .description p {
-        font-size: 12px!important;
-        line-height: 16px !important;
-    }
-    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a {
-        height: 42px !important;
-        line-height: 44px !important;
-        font-size: 11px !important;
-        padding: 0 45px 0 54px !important;
-    } 
-    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a:nth-child(2) {
-        display: flex!important;
-        margin: 10px 0 0 0 !important;
-        width: 49% !important;
-
-    }
-    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder {
-        margin: 10px 0 0 0;
-       }
-       .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a {
-         margin: 0 18px 0 0;
-        }
-        .homePage .thirdSection .swiper-container .swiper-slide .container .paginationHolder .hospitalsSliderPag .swiper-pagination-bullet {
-         margin:  0 5px;
-        }
-        .homePage .thirdSection .swiper-container .swiper-slide .container .allHospitalsBtn {
-         margin:  20px 0;
-         font-size: 12px;
-        }
-        .homePage .forthSection .sliderWrapper .swiper-container {
-            padding: 0 0 0 10%!important;
-        }
-        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide,
-        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active,
-        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-next ,
-        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-prev {
-            width: 100%!important;
-        }
-        .homePage .forthSection .dotsImage {
-         right: -90px;
-        }
-        .homePage .fifthSection .leftSection .imageHolder {
-            bottom: 3rem!important;
-            left: -9rem!important;
-        }
-        .homePage .fifthSection .row .leftSection .imageHolder  .bigCircle {
-         width: 301px!important;
-         height: 301px!important;
-        }
-        .homePage .fifthSection .leftSection .imageHolder .bigCircle {
-            position: relative!important;
-            bottom: -40px!important;
-            left: -19px!important;
-        }
-        .homePage .fifthSection .rightSection .listWrapper .eachListWrap .descriptionWrap {
-            padding: 0 0 0 15px!important;
-        }
-        .homePage .fifthSection  .rightSection { 
-         padding: 10px 0 0 0!important;
-         position: relative!important;
-         left: -33rem!important;
-         top: 17rem!important;
-        }
-        .homePage .fifthSection .row .rightSection .listWrapper .eachListWrap {
-            padding: 15px 30px 10px!important;
-            margin: 0 24px 0 0!important;
-        }
-        .blood-donation__section2 {
-            position: relative!important;
-            top: 17rem!important;
-        }
-        .blood-donation__section2 .blood-donation__section2--title h2 {
-            bottom: 7rem!important;
-        }
-        .blood-donation__section2 .blood-donation__section2--title h2:after {
-            bottom: -35px!important;
-        }
-        .blood-donation__section2--image {
-            left: -15px!important;
-            max-width: 341px!important;
-        }
-        .sixthSection {
-            margin: 8rem 0 0 0!important;
-        }
-        .moreInfoSection h2:after {
-            left: 43px!important;
-        }
-        #sec_8 .cont-title {
-            margin: -5rem 0 0 1rem!important;
-        }
-    
-    footer{
-        padding: 56px 0 0 0!important;
-        height: 38rem!important;
-    }
-    
-     footer .backPart .topPart {
-        height: 399px!important;
-     }
-     footer .backPart .topPart .column {
-        position: relative!important;
-        top: 4rem!important;
-     }
-    
-     footer .backPart .bottomPart {
-        position: relative!important;
-        top: 2rem!important;
-    }
-     footer .backPart .bottomPart ul {
-         display: ruby-text!important;
-     }
-     footer .frontPart {
-         height: 7rem!important;
-     }
-     footer .frontPart .innerFrontPart {
-         top: 0rem!important;
-         right: 6rem!important;
-         position: relative!important;
-     }
-     footer .frontPart .innerFrontPart h2 {
-         font-size: 13px!important;
-         display: flex!important;
-         justify-content: left!important;
-         margin: 0 0 12px 0!important;
-     }
-     footer .frontPart .innerFrontPart form {
-         bottom: 1rem!important;
-         width: 80%!important;
-     }
-     footer .frontPart .socialMediaHolder {
-         right: 17rem!important;
-     }
-     footer .frontPart .socialMediaHolder li a {
-        font-size: 14px!important;
-     }
-     footer .frontPart h4 {
-        bottom: 7px!important;
-        left: 13px!important;
-        font-size: 10px!important;
-     }
-}
-/*Mobile L */
-@media(max-width: 425px){
-    body.home .topHeader {
-        top: 4px !important;
-    }
-    .topHeader .rightSection {
-        position: relative!important;
-        left: 42rem!important;
-        top: -3rem!important;
-    }
-    .topHeader .rightSection a.languageSwitcher {
-        margin: 3px 10px 0 0 !important;
-        width: 54px  !important;
-        height: 26px !important;
-        line-height: 23px  !important;
-        font-size: 10px  !important;
-        position: relative !important ;
-        left: -9rem !important;
-    }
-    .topHeader .rightSection a.whatsapp.desktop {
-        width: 5rem !important;
-        height: 2rem !important ;
-        position: relative  !important;
-        top: 46px!important;
-        right: 140px!important;
-        margin: 3px 7px 0;
-    }
-    .topHeader .rightSection a.whatsapp.desktop span {
-        display: flex !important;
-        font-size: 12px !important;
-        align-items: center !important ;
-        justify-content: center !important ;
-        position: relative !important ;
-        white-space: nowrap !important;
-
-    }
-    .topHeader .menuOpenerHolder {
-        position: relative !important;
-        top: -5rem !important;
-    }
-    .fullMenuWrapper.openMe {
-        right: 12rem!important;
-        opacity: 1!important;
-        z-index: 9999!important;
-        display: flex!important;
-        justify-content: center!important;
-        align-items: center!important;
-    }
-    .fullMenuWrapper .closeHolder i {
-        color: #fff !important;
-        font-size: 28px !important;
-    }
-    .fullMenuWrapper .languageSwitcher .l1 {
-        position: absolute !important;
-        top: 120px !important;
-        right: 46px !important;
-        width: 56px !important;
-        height: 24px !important;
-        border-radius: 100% !important;
-        border: 1px solid rgba(255,255,255, .32) !important;
-        text-align: center !important;
-        line-height: 23px !important;
-        font-size: 10px !important;
-        color: #fff !important;
-    }
-    .fullMenuWrapper .languageSwitcher .l2 {
-        position: absolute !important;
-        top: 120px !important;
-        right: 93px !important;
-        width: 56px !important;
-        height: 24px !important;
-        border-radius: 100% !important;
-        border: 1px solid rgba(255,255,255, .32) !important;
-        text-align: center !important;
-        line-height: 23px !important;
-        font-size: 10px !important;
-        color: #fff !important;
-    }
-    .fullMenuWrapper .middleMenuHolder ul {
-        margin: 0 0 0 28px!important;
-        padding: 0 !important;
-
-    }
-    .fullMenuWrapper .middleMenuHolder ul li a {
-        font-size: 9px !important;
-        padding: 0 0 13px 0 !important;
-        color: #fff !important;
-        display: inline-block !important;
-        position: relative !important;
-        transition: transform 0.5s ease !important; 
-    }
-    .fullMenuWrapper .socialMediaHolder li {
-        position: relative !important;
-        padding: 0 5px 0 2px !important;
-        display: inline-block !important;
-        transition: transform 0.5s ease !important;
-
-    }
-    .homePage .firstSection .innerSection {
-        position: relative !important;
-        top: -77px !important;
-
-    }
-    .homePage .firstSection .innerSection h1 {
-        font-size: 21px !important;
-    }
- 
-    .homePage .firstSection .bottomSection .container .bottomColumn {
-        flex: 0 0 calc(20% + 57px) !important;
-    }
-    .homePage .secondSection {
-        padding: 30px 0 35px !important;
-        height: 31rem !important;
-    }
-    .homePage .secondSection .container {
-        padding: 0px 0rem 0px 2rem!important;
-    }
-    .homePage .secondSection .leftSection p {
-        max-width: 302px !important;
-        }
-    .homePage .secondSection .rightSection {
-        position: relative!important;
-        top: 15rem !important;
-        right: 75rem !important;
-    }
-    .homePage .secondSection .rightSection .innerRightSection {
-        position: relative!important;
-        display: flex!important;
-        left: 23px!important;
-    }
-    .homePage .secondSection .rightSection .innerRightSection .circle {
-        margin-right: 27px !important ;
-        width: 37px !important;
-    }
-    .homePage .secondSection .rightSection .innerRightSection .circle:nth-child(2) {
-        margin: 40px 30px 0 30px!important;
-    }
-    .homePage .secondSection .rightSection .innerRightSection .circle:nth-child(3) {
-        margin: 80px 0 0 23px!important;
-    }
-    
-    .homePage .thirdSection:before {
-        width: 100%!important;
-        height: 100%!important;
-    }
-    .homePage .thirdSection .swiper-container .swiper-slide .container {
-        padding: 6px 0 6px 24px !important;
-    }
-    .homePage .thirdSection .swiper-container .swiper-slide .container .sectionTitle {
-        left: -17px !important;
-        top: 0 !important;
-        font-size: 21px!important;
-    }
-    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .description {
-        width: 75% !important;
-    }
-    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .description p {
-        font-size: 12px!important;
-        line-height: 16px !important;
-    }
-    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a {
-        height: 42px !important;
-        line-height: 44px !important;
-        font-size: 11px !important;
-        padding: 0 45px 0 54px !important;
-    } 
-    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a:nth-child(2) {
-        display: flex!important;
-        margin: 10px 0 0 0 !important;
-        width: 49% !important;
-
-    }
-    .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder {
-        margin: 10px 0 0 0;
-       }
-       .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a {
-         margin: 0 18px 0 0;
-        }
-        .homePage .thirdSection .swiper-container .swiper-slide .container .paginationHolder .hospitalsSliderPag .swiper-pagination-bullet {
-         margin:  0 5px;
-        }
-        .homePage .thirdSection .swiper-container .swiper-slide .container .allHospitalsBtn {
-         margin:  20px 0;
-         font-size: 12px;
-        }
-        .homePage .forthSection .sliderWrapper .swiper-container {
-            padding: 0 0 0 10%!important;
-        }
-        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide,
-        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active,
-        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-next ,
-        .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-prev {
-            width: 100%!important;
-        }
-        .homePage .forthSection .dotsImage {
-         right: -90px;
-        }
-        .homePage .fifthSection .leftSection .imageHolder {
-            bottom: 3rem!important;
-            left: -9rem!important;
-        }
-        .homePage .fifthSection .leftSection .imageHolder .bigCircle {
-            position: relative!important;
-            top: 11rem!important;
-            right: 10rem!important;
-        }
-        .homePage .fifthSection .leftSection .imageHolder a.goToBtn {
-            top: 24rem!important;
-            right: 15rem!important;
-        }
-        .homePage .fifthSection .leftSection .imageHolder .bigCircle {
-            position: relative!important;
-            bottom: -40px!important;
-            left: -19px!important;
-        }
-        .homePage .fifthSection .rightSection .listWrapper {
-            position: relative!important;
-            right: 38rem!important;
-            top: 21rem!important;
-        }
-        .homePage .fifthSection .rightSection .listWrapper .eachListWrap .descriptionWrap {
-            padding: 0 0 0 15px!important;
-        }
-        .homePage .fifthSection  .rightSection { 
-         padding: 10px 0 0 0!important;
-         position: relative!important;
-         left: -33rem!important;
-         top: 17rem!important;
-        }
-        .homePage .fifthSection .row .rightSection .listWrapper .eachListWrap {
-            padding: 15px 30px 10px!important;
-            margin: 0 24px 0 0!important;
-        }
-        .blood-donation__section2 {
-            position: relative!important;
-            top: 10rem!important;
-        }
-
-        .blood-donation__section2 .blood-donation__section2--title h2 {
-            bottom: 7rem!important;
-        }
-        .blood-donation__section2 .blood-donation__section2--title h2:after {
-            bottom: -15px!important;
-        }
-        .blood-donation__section2--image {
-            left: -19px!important;
-            top: 4rem!important;
-        }
-        .blood-donation__section2--numbers {
-            position: relative!important;
-            top: 1rem!important;
-        }
-        .sixthSection {
-            margin: 8rem 0 0 0!important;
-        }
-        .moreInfoSection h2:after {
-            left: 43px!important;
-        }
-        #sec_8 .cont-title {
-            margin: -5rem 0 0 1rem!important;
-        }
-    
-    footer{
-        padding: 56px 0 0 0!important;
-        height: 38rem!important;
-    }
-    
-     footer .backPart .topPart {
-        padding: 34px 0 22px 14px!important;
-        top: 1rem!important;
-        height: 399px!important;
-     }
-     footer .backPart .topPart .column {
-        position: relative!important;
-        top: 4rem!important;
-     }
-    
-     footer .backPart .bottomPart {
-        position: relative!important;
-        bottom: 1rem!important;
-    }
-     footer .backPart .bottomPart ul {
-         display: ruby-text!important;
-     }
-     footer .frontPart {
-        bottom: 37rem!important;
-         height: 7rem!important;
-     }
-     footer .frontPart .innerFrontPart {
-         top: 0rem!important;
-         right: 5rem!important;
-         position: relative!important;
-     }
-     footer .frontPart .innerFrontPart h2 {
-         font-size: 13px!important;
-         display: flex!important;
-         justify-content: left!important;
-         margin: 0 0 12px 0!important;
-     }
-     footer .frontPart .innerFrontPart form {
-         bottom: 1rem!important;
-         width: 80%!important;
-     }
-     footer .frontPart .socialMediaHolder {
-         right: 8rem!important;
-     }
-     footer .frontPart .socialMediaHolder li a {
-        font-size: 14px!important;
-     }
-     footer .frontPart h4 {
-        bottom: 7px!important;
-        left: 13px!important;
-        font-size: 10px!important;
-     }
-}
 /*Per Tablet*/
 
 @media(max-width: 768px) {
@@ -2787,10 +1834,9 @@ footer .frontPart .socialMediaHolder li a:hover {
             top: 0;
             height: 100%;
             width: 56%;
-            transition: right 0.5s ease;
         }
         .fullMenuWrapper.openMe {
-            right: 21rem;
+            right: 22rem;
             opacity: 1;
             z-index: 9999;
             display: flex;
@@ -2896,19 +1942,17 @@ footer .frontPart .socialMediaHolder li a:hover {
             font-size: 13px!important;
             max-width: 347px!important;
             }
-                 
-            .homePage .secondSection .rightSection {
+        .homePage .secondSection .rightSection .innerRightSection {
             position: relative!important;
-            flex: 1!important;
-            text-align: right!important;
-            right: 14rem!important;
-            bottom: 3rem!important;
+            right: 21rem!important;
         }
+     
           .homePage .secondSection .rightSection .innerRightSection .circle {
             margin-right: 38px!important;
             width: 3rem!important;
             height: 3rem!important;
             position: relative!important;
+       
     
           }
           .homePage .secondSection .rightSection .innerRightSection .circle .innerCircle {
@@ -2997,20 +2041,24 @@ footer .frontPart .socialMediaHolder li a:hover {
             font-size: 28px!important;
             top: -8rem!important;
         }
-           .homePage .fifthSection .row .leftSection .imageHolder  .bigCircle {
-            width: 322px!important;
-            height: 322px!important;
-            bottom: -81px !important;
-            right: 13rem!important;
-           }
-           .homePage .fifthSection .row .rightSection { 
-            padding: 10px 0 0 0;
-           }
-           .homePage .fifthSection .rightSection {
-            top: -5rem !important;
-            position: relative !important;
-            right: 9rem !important;
+        .homePage .fifthSection .row .leftSection .imageHolder .bigCircle {
+            width: 322px !important;
+            height: 322px !important;
+            top: 11rem !important;
+            right: 20rem !important;
         }
+           .homePage .fifthSection  .rightSection {
+            padding: 10px 0 0 0!important;
+            position: relative!important;
+            left: -10rem !important;
+            top: -11rem !important;
+        }
+        .homePage .fifthSection .leftSection .imageHolder a.goToBtn {
+            position: absolute!important;
+            bottom: 15px !important;
+            right: 24rem !important;
+    
+            }
          
     
            .homePage .fifthSection .row .rightSection .listWrapper .eachListWrap { 
@@ -3035,16 +2083,22 @@ footer .frontPart .socialMediaHolder li a:hover {
             padding-bottom: 2px!important;
            }
            .blood-donation__section2--image {
-            bottom: 15rem!important;
-            margin: auto!important;
-            right: 7rem!important;
-            max-width: 30rem!important;
+            left: 8rem!important;
+            bottom: 54rem !important;
+            margin: auto !important;
+            /* right: -6rem !important; */
+            max-width: 31rem !important;
+        }
+        .blood-donation__section2 .num-left {
+            top: 5rem!important;
+            position: relative!important;
+            float: left!important;
         }
         .blood-donation__section2 .num-right {
-            float: right!important;
-            position: relative!important;
-            bottom: 10rem!important;
-            right: 5rem!important;
+            float: right !important;
+            position: relative !important;
+            top: 10rem !important;
+            left: -4rem !important;
         }
         
         .moreInfoSection {
@@ -3146,4 +2200,369 @@ footer .frontPart .socialMediaHolder li a:hover {
             bottom: 4rem;
             right: 3rem;
         }
+}
+/*Mobile S */
+@media (max-width: 320px) {
+    body.home .topHeader {
+        top: -33px!important;
+    }
+    .topHeader .rightSection {
+        position: relative!important;
+        left: 59rem!important;
+        top: -1rem!important;
+    }
+    .topHeader .rightSection a.languageSwitcher {
+        margin: 3px 10px 0 0 !important;
+        width: 54px !important;
+        height: 26px !important;
+        line-height: 23px !important;
+        font-size: 10px !important;
+        position: relative !important;
+        left: -9rem !important;
+    }
+    .topHeader .rightSection a.whatsapp.desktop {
+        width: 2rem !important;
+        height: 1rem !important;
+        position: relative !important;
+        top: -21px !important;
+        left: -15rem !important;
+        margin: 3px 7px 0;
+    }
+
+    .topHeader .rightSection a.whatsapp.desktop span {
+        left: -19px;
+        display: flex !important;
+        font-size: 12px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        position: relative !important;
+        white-space: nowrap !important;
+    }
+.topHeader .menuOpenerHolder {
+    position: relative !important;
+    top: -5rem !important;
+}
+.fullMenuWrapper {
+    position: fixed!important;
+    top: 0!important;
+    height: 100%!important;
+    width: 75%!important;
+}
+.fullMenuWrapper.openMe {
+    right: 5rem !important;
+    opacity: 1 !important;
+    z-index: 9999 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.fullMenuWrapper .closeHolder i {
+    color: #fff !important;
+    font-size: 28px !important;
+}
+.fullMenuWrapper .languageSwitcher .l1 {
+    position: absolute !important;
+    top: 120px !important;
+    right: 46px !important;
+    width: 56px !important;
+    height: 24px !important;
+    border-radius: 100% !important;
+    border: 1px solid rgba(255,255,255, .32) !important;
+    text-align: center !important;
+    line-height: 23px !important;
+    font-size: 10px !important;
+    color: #fff !important;
+}
+.fullMenuWrapper .languageSwitcher .l2 {
+    position: absolute !important;
+    top: 120px !important;
+    right: 93px !important;
+    width: 56px !important;
+    height: 24px !important;
+    border-radius: 100% !important;
+    border: 1px solid rgba(255,255,255, .32) !important;
+    text-align: center !important;
+    line-height: 23px !important;
+    font-size: 10px !important;
+    color: #fff !important;
+}
+.fullMenuWrapper .middleMenuHolder ul {
+    margin: 0 0 0 28px!important;
+    padding: 0 !important;
+
+}
+.fullMenuWrapper .middleMenuHolder ul li a {
+    font-size: 9px !important;
+    padding: 0 0 13px 0 !important;
+    color: #fff !important;
+    display: inline-block !important;
+    position: relative !important;
+    transition: transform 0.5s ease !important; 
+}
+.fullMenuWrapper .socialMediaHolder li {
+    position: relative !important;
+    padding: 0 5px 0 2px !important;
+    display: inline-block !important;
+    transition: transform 0.5s ease !important;
+
+}
+.homePage .firstSection .innerSection {
+    position: relative !important;
+    top: -77px !important;
+
+}
+.homePage .firstSection .innerSection h1 {
+    font-size: 21px !important;
+}
+.homePage .firstSection .bottomSection {
+    overflow-x: auto!important;
+}
+.homePage .firstSection .bottomSection .container .bottomColumn {
+    flex: 0 0 calc(20% + 57px) !important;
+}
+.homePage .secondSection {
+    padding: 30px 0 35px !important;
+    height: 31rem !important;
+}
+.homePage .secondSection .container {
+    padding: 0 0 0 2rem !important;
+}
+.homePage .secondSection .leftSection p {
+    max-width: 302px !important;
+    }
+    .homePage .secondSection .rightSection {
+        position: relative !important;
+        top: 15rem !important;
+        right: 40rem !important;
+    }
+.homePage .secondSection .rightSection .innerRightSection {
+    position: relative!important;
+    display: flex!important;
+    right: 5rem!important;
+}
+.homePage .secondSection .rightSection .innerRightSection .circle .innerCircle {
+    width: 86px!important;
+    height: 86px!important;
+}
+.homePage .secondSection .rightSection .innerRightSection .circle {
+    margin-right: 27px!important ;
+}
+.homePage .secondSection .rightSection .innerRightSection .circle:nth-child(2) {
+    margin: 40px 30px 0 30px!important;
+}
+.homePage .secondSection .rightSection .innerRightSection .circle:nth-child(3) {
+    margin: 80px 0 0 23px!important;
+}
+
+.homePage .thirdSection:before {
+    width: 100% !important;
+    height: 100% !important;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container {
+    padding: 6px 0 6px 24px !important;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container .sectionTitle {
+    left: -17px !important;
+    top: 0 !important;
+    font-size: 21px!important;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .numberAndSocialMedia ul {
+    display: inline-block!important;
+    padding: 0px!important;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .description {
+    width: 75% !important;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .description p {
+    font-size: 12px!important;
+    line-height: 16px !important;
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a {
+    height: 42px !important;
+    line-height: 44px !important;
+    font-size: 11px !important;
+    padding: 0 45px 0 54px !important;
+} 
+.homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a:nth-child(2) {
+    display: flex!important;
+    margin: 10px 0 0 0 !important;
+    width: 49% !important;
+
+}
+.homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder {
+    margin: 10px 0 0 0;
+   }
+   .homePage .thirdSection .swiper-container .swiper-slide .container .leftSection .innerLeftSection .buttonsHolder a {
+     margin: 0 18px 0 0;
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container .paginationHolder .hospitalsSliderPag .swiper-pagination-bullet {
+     margin:  0 5px;
+    }
+    .homePage .thirdSection .swiper-container .swiper-slide .container .allHospitalsBtn {
+     margin:  20px 0;
+     font-size: 12px;
+    }
+    .homePage .forthSection .sliderWrapper .swiper-container {
+        padding: 0 0 0 10%!important;
+    }
+    .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide,
+    .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active,
+    .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-next ,
+    .homePage .forthSection .sliderWrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-prev {
+        width: 100%!important;
+    }
+    .homePage .forthSection .sliderWrapper .navAndPag .articlesSliderPag {
+        position: relative !important;
+        right: 55px !important;
+    }
+    .homePage .forthSection .dotsImage {
+     right: -90px;
+    }
+    .homePage .fifthSection .leftSection .imageHolder {
+        bottom: 3rem!important;
+        left: -9rem!important;
+    }
+    .homePage .fifthSection .row .leftSection .imageHolder .bigCircle {
+        width: 311px !important;
+        height: 311px !important;
+        top: -1rem !important;
+        right: 21px !important;
+    }
+    .homePage .fifthSection .leftSection .imageHolder a.goToBtn {
+        position: absolute !important;
+        bottom: 204px !important;
+        right: 3rem !important;
+    }
+    .homePage .fifthSection .rightSection .listWrapper .eachListWrap .descriptionWrap {
+        width: 15rem!important;
+        overflow-wrap: break-word!important;
+        /* display: inline-block; */
+        padding: 0 0 0 13px !important;
+    }
+    .homePage .fifthSection  .rightSection { 
+     padding: 10px 0 0 0!important;
+     position: relative!important;
+     left: -33rem!important;
+     top: 17rem!important;
+    }
+    .homePage .fifthSection .row .rightSection .listWrapper .eachListWrap {
+        padding: 15px 22px 10px !important;
+        margin: 0 24px 0 0 !important;
+    }
+    .blood-donation__section2 {
+        position: relative!important;
+        top: 17rem!important;
+    }
+    .blood-donation__section2 .blood-donation__section2--title h2 {
+        right: 1rem!important;
+        font-size: 22px!important;
+        bottom: 7rem !important;
+        display: inline-block!important;
+        padding-bottom: 11px!important;
+        margin: 0!important;
+    }
+    .blood-donation__section2 .blood-donation__section2--title h2:after {
+        bottom: 2pxpx!important;
+    }
+    .blood-donation__section2--image {
+        bottom: 79rem!important;
+        left: -37px !important;
+        max-width: 336px !important;
+    }
+    .blood-donation__section2 .num-right {
+        float: right !important;
+        position: relative !important;
+        top: 2rem !important;
+        left: -4rem !important;
+    }
+    .sixthSection {
+        margin: 2rem 0 0 0 !important;
+    }
+    .moreInfoSection h2 {
+        font-size: 26px!important;
+        padding-bottom: 8px!important;
+    }
+    .moreInfoSection h2:after {
+        left: 5px !important;
+    }
+    #sec_8 {
+        margin: 6rem 0 0 0 !important;
+
+    }
+    #sec_8 .cont-title {
+        font-size: 27px!important;
+        margin: -5rem 0 0 1rem!important;
+    }
+    #sec_8 .buttonsHolder a {
+        height: 1rem!important;
+        min-width: 41px!important;
+        font-size: 14px!important;
+        display: flex!important;
+        align-items: center!important;
+        justify-content: center!important;
+    }
+
+footer{
+    padding: 56px 0 0 0!important;
+    height: 35rem!important;
+}
+
+footer .backPart .topPart {
+    width: 293px!important;
+    padding: 30px 0 34px 14px!important;
+    height: 313px !important;
+    position: relative!important;
+    top: 2rem!important;
+}
+ footer .backPart .topPart .column {
+    position: relative!important;
+    top: 4rem!important;
+ }
+
+ footer .backPart .bottomPart {
+    position: relative !important;
+    top: 4rem !important;
+}
+ footer .backPart .bottomPart ul {
+     display: ruby-text!important;
+     position: relative!important;
+     left: 0rem!important;
+     bottom: 1px!important;
+ }
+ footer .frontPart {
+    /* background-color: #3d3c62; */
+    width: 322px !important;
+    height: 9rem !important;
+    bottom: 521px !important;
+    left: 0px!important;
+   
+}
+ footer .frontPart .innerFrontPart {
+     top: 0rem!important;
+     right: -2rem!important;
+     position: relative!important;
+ }
+ footer .frontPart .innerFrontPart h2 {
+     font-size: 13px!important;
+     display: flex!important;
+     justify-content: left!important;
+     margin: 0 0 12px 0!important;
+ }
+ footer .frontPart .innerFrontPart form {
+     bottom: 1rem!important;
+     width: 80%!important;
+ }
+ footer .frontPart .socialMediaHolder {
+    right: 2rem !important;
+    top:  8rem!important;
+}
+ footer .frontPart .socialMediaHolder li a {
+    font-size: 15px!important;
+ }
+ footer .frontPart h4 {
+    bottom: 0px!important;
+    left: 13px!important;
+    font-size: 10px!important;
+ }
+
 }
